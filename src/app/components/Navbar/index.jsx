@@ -9,7 +9,7 @@ export default function Navbar() {
         <>
             <section className="">
                 {/* Topbar - Start */}
-                <div className="bg-primary py-[13px] flex">
+                <div className="bg-primary py-[13px] flex px-5">
                     <div className="container mx-auto font-mulish flex justify-between">
                         <div className="topbar-contact-info text-dark_5 flex gap-9 text-base">
                             <Link
@@ -61,7 +61,7 @@ export default function Navbar() {
                 </div>
                 {/* Topbar - Start */}
                 {/* Navbar menu -/start */}
-                <nav className="bg-dark_6 py-6">
+                <nav className="bg-dark_6 py-6 px-5">
                     <div className="container mx-auto font-mulish flex justify-between items-center">
                         <div className="logo-search-area flex align-middle items-center gap-[60px]">
                             <Link href={"/"} className="logo">

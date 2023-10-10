@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Mulish, Noto_Serif } from "next/font/google";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             <body className=" font-noto_serif">
                 <Navbar />
                 {children}
+                <Footer />
             </body>
         </html>
     );
