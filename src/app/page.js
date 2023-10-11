@@ -54,7 +54,7 @@ export default function Home() {
                         <div className=" w-full">
                             <ul className=" font-mulish">
                                 <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold max-w-[322px] w-full text-center">
+                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
                                         88%
                                     </div>
                                     <div className="w-full text-left">
@@ -64,7 +64,7 @@ export default function Home() {
                                     </div>
                                 </li>
                                 <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold max-w-[322px] w-full text-center">
+                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
                                         +380%
                                     </div>
                                     <div className="w-full text-left">
@@ -73,7 +73,7 @@ export default function Home() {
                                     </div>
                                 </li>
                                 <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold max-w-[322px] w-full text-center">
+                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
                                         +85%
                                     </div>
                                     <div className="w-full text-left">
