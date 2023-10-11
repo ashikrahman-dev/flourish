@@ -151,7 +151,7 @@ export default function Home() {
                         alt="Call to action bg image"
                         src={CallToActionBg}
                         placeholder="blur"
-                        quality={100}
+                        quality={60}
                         sizes="100vw"
                         fill
                         style={{
