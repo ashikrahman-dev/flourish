@@ -26,9 +26,9 @@ export default function Slider() {
 
                 <div className="container">
                     <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-screen-2xl w-full">
-                        <div className="text-white flex items-center w-full flex-col-reverse justify-center lg:flex-row gap-10">
+                        <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
                             <div className=" w-full">
-                                <div className="max-w-[520px]">
+                                <div className=" max-w-[520px]">
                                     <h1 className=" text-[52px] leading-[1.19em] text-white font-semibold">
                                         We help you help more people, no matter
                                         your method.
@@ -47,7 +47,7 @@ export default function Slider() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className=" w-full flex justify-start lg:justify-end">
+                            <div className=" w-full flex justify-start xl:justify-end ">
                                 <div className="bg-clip-path bg-no-repeat max-w-[382px] h-full py-3 w-full">
                                     <div className="ps-14 ">
                                         <h4 className=" text-[26px] text-dark_1 font-bold leading-[1.38em]">
