@@ -2,10 +2,14 @@ import Image from "next/image";
 import Slider from "./components/Slider";
 import ProfileViewImage from "/public/img/how-it-work-section-img.png";
 import CounterUpSec from "/public/img/counterup-section-img.svg";
+import ConnectPeople from "/public/img/connect-new-people-img.png";
+import CallToActionBg from "/public/img/cta-section-bg.jpg";
+import Feedback from "./components/Feedback";
+import Link from "next/link";
 
 export default function Home() {
     return (
-        <main className="">
+        <>
             <Slider />
 
             {/* How it works */}
@@ -97,6 +101,88 @@ export default function Home() {
                 </div>
             </section>
             {/* CounterUp section */}
-        </main>
+
+            {/* Feedback */}
+            <Feedback />
+            {/* Feedback */}
+
+            {/* Connect new people */}
+            <section className="bg-primary_shade_4 pb-[120px] pt-[80px]">
+                <div className="container px-5">
+                    <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-12">
+                        <div className=" w-full">
+                            <Image
+                                alt="Feedback Image"
+                                src={ConnectPeople}
+                                sizes="100vw"
+                                placeholder="blur"
+                                quality={100}
+                                style={{
+                                    width: "100%",
+                                    maxWidth: "630px",
+                                    height: "auto",
+                                }}
+                            />
+                        </div>
+                        <div className="w-full">
+                            <h3 className="text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
+                                Connect with new people ready for you
+                            </h3>
+                            <p className="text-dark_2 font-mulish text-xl leading-[1.5em] font-normal mb-7">
+                                Our unique search system connects you with
+                                people searching for what you can help with -
+                                not just people who already know the name of
+                                your method.
+                            </p>
+                            <p className=" text-dark_2 font-mulish text-xl leading-[1.5em] font-normal">
+                                Your reviews and verified credentials help them
+                                choose you with confidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Connect new people */}
+
+            {/* Call to action */}
+            <section className="relative min-h-[490px] h-full w-full px-5">
+                <div className="">
+                    <Image
+                        alt="Call to action bg image"
+                        src={CallToActionBg}
+                        placeholder="blur"
+                        quality={100}
+                        sizes="100vw"
+                        fill
+                        style={{
+                            width: "100%",
+                            objectFit: "cover",
+                        }}
+                    />
+                </div>
+
+                <div className="container">
+                    <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-screen-2xl w-full">
+                        <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
+                            <div className=" w-full">
+                                <div className=" max-w-[630px]">
+                                    <h1 className=" text-[40px] leading-[1.25em] text-white font-semibold">
+                                        We make reaching new people easy, so you
+                                        can focus on helping them.
+                                    </h1>
+                                    <Link
+                                        href={"/"}
+                                        className=" text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[18px] px-11 inline-flex mt-12 hover:bg-dark_2 transition-colors duration-200"
+                                    >
+                                        Sign up for free
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Call to action */}
+        </>
     );
 }
