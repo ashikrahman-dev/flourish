@@ -87,7 +87,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className="hidden md:block">
-                            <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-6 lg:gap-3 items-center">
+                            <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-3 lg:gap-6 items-center">
                                 <Link href={"/"}>Sign up as a guide</Link>
                                 <Link
                                     className=" text-primary border-2 border-primary rounded-[50px] py-2 px-6"
