@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Logo from "/public/img/logo.svg";
 
 import "./style.css";
 
@@ -10,11 +11,11 @@ export default function Navbar() {
             <section className="">
                 {/* Topbar - Start */}
                 <div className="bg-primary py-[13px] flex px-5">
-                    <div className="container mx-auto font-mulish flex justify-between">
-                        <div className="topbar-contact-info text-dark_5 flex gap-9 text-base">
+                    <div className="container font-mulish flex justify-center md:justify-between">
+                        <div className="topbar-contact-info text-dark_5 flex gap-5 lg:gap-9 text-sm lg:text-base">
                             <Link
                                 href="tel:0118005678"
-                                className="flex items-center gap-[10px]"
+                                className="flex items-center gap-[5px] lg:gap-[10px]"
                             >
                                 <span>
                                     <svg
@@ -34,7 +35,7 @@ export default function Navbar() {
                             </Link>
                             <Link
                                 href="mailto:info@flourishworld.co"
-                                className="flex items-center gap-[10px]"
+                                className="flex items-center gap-[5px] lg:gap-[10px]"
                             >
                                 <span>
                                     <svg
@@ -53,46 +54,50 @@ export default function Navbar() {
                                 info@flourishworld.co
                             </Link>
                         </div>
-                        <div className="topbar-menu text-dark_5 flex gap-10">
-                            <Link href={"/"}>About</Link>
-                            <Link href={"/"}>Contact us</Link>
+                        <div className="hidden md:block">
+                            <div className="topbar-menu text-dark_5 flex gap-10 text-sm lg:text-base">
+                                <Link href={"/"}>About</Link>
+                                <Link href={"/"}>Contact us</Link>
+                            </div>
                         </div>
                     </div>
                 </div>
                 {/* Topbar - Start */}
                 {/* Navbar menu -/start */}
                 <nav className="bg-dark_6 py-6 px-5">
-                    <div className="container mx-auto font-mulish flex justify-between items-center">
-                        <div className="logo-search-area flex align-middle items-center gap-[60px]">
+                    <div className="container font-mulish flex justify-between items-center">
+                        <div className="logo-search-area flex align-middle items-center gap-[60px] lg:gap-8">
                             <Link href={"/"} className="logo">
                                 <Image
-                                    src="/img/logo.svg"
+                                    src={Logo}
                                     sizes="(max-width: 150px) 100vw, (max-width: 140px) 50vw, 33vw"
                                     alt="Logo"
                                     width={150}
                                     height={100}
                                 />
                             </Link>
-                            <div className="search-area">
+                            <div className="search-area hidden lg:block">
                                 <input
                                     type="search"
                                     name=""
                                     id=""
-                                    className="bg-dark_7 border border-dark_6 rounded-[50px] text-dark_3 font-medium py-2 pe-5 ps-[52px] outline-none focus:border-dark_3 transition-all delay-50"
+                                    className="bg-dark_7 border border-dark_6 rounded-[50px] text-dark_3 font-medium py-2 pe-5 ps-[52px] outline-none focus:border-dark_3 transition-all duration-150"
                                     placeholder="Search"
                                 />
                             </div>
                         </div>
-                        <div className="navigation-menu text-dark_3 text-lg font-semibold tracking-[.03em] flex gap-6 items-center">
-                            <Link href={"/"}>Sign up as a guide</Link>
-                            <Link
-                                className=" text-primary border-2 border-primary rounded-[50px] py-2 px-6"
-                                href={"/"}
-                            >
-                                Write a review
-                            </Link>
-                            <Link href={"/"}>Sign up</Link>
-                            <Link href={"/"}>Login</Link>
+                        <div className="hidden md:block">
+                            <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-6 lg:gap-3 items-center">
+                                <Link href={"/"}>Sign up as a guide</Link>
+                                <Link
+                                    className=" text-primary border-2 border-primary rounded-[50px] py-2 px-6"
+                                    href={"/"}
+                                >
+                                    Write a review
+                                </Link>
+                                <Link href={"/"}>Sign up</Link>
+                                <Link href={"/"}>Login</Link>
+                            </div>
                         </div>
                     </div>
                 </nav>

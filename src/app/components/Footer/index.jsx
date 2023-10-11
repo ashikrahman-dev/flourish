@@ -7,16 +7,16 @@ export default function Footer() {
     return (
         <>
             <footer className="bg-dark_1 py-6 text-dark_4 px-5">
-                <div className="container mx-auto flex justify-between">
+                <div className="container justify-between flex flex-col-reverse md:flex-row items-center gap-4">
                     {/* Copyright text */}
-                    <div className="">
+                    <div className="text-sm lg:text-base">
                         © Flourish. {currentYear}, All Rights Reserved.
                     </div>
                     {/* Copyright text */}
 
                     {/* Footer menu */}
                     <div className="">
-                        <ul className=" text-base font-semibold flex list-disc gap-14">
+                        <ul className="text-sm lg:text-base font-semibold flex list-disc gap-7 lg:gap-14 flex-wrap">
                             <li>
                                 <Link href={"/"}>About</Link>
                             </li>

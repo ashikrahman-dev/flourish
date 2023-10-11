@@ -9,6 +9,9 @@ module.exports = {
         extend: {
             backgroundImage: {},
         },
+        container: {
+            center: true,
+        },
 
         fontFamily: {
             mulish: ["var(--font-mulish)"],
@@ -20,6 +23,7 @@ module.exports = {
             primary_shade_1: "#B97B6C",
             primary_shade_2: "#DDB5AB",
             primary_shade_3: "#FFE5DF",
+            primary_shade_4: "#F3EDEB",
             dark_1: "#37211A",
             dark_2: "#53413B",
             dark_3: "#716460",
