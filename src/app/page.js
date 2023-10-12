@@ -8,6 +8,8 @@ import Feedback from "./components/Feedback";
 import Link from "next/link";
 import Accordion from "./components/Accordion";
 
+import slide_1_bg from "/public/img/slide-1-bg.jpg";
+
 export default function Home() {
     return (
         <>
@@ -152,7 +154,7 @@ export default function Home() {
                         alt="Call to action bg image"
                         src={CallToActionBg}
                         placeholder="blur"
-                        quality={60}
+                        quality={90}
                         sizes="100vw"
                         fill
                         style={{
@@ -163,7 +165,7 @@ export default function Home() {
                 </div>
 
                 <div className="container">
-                    <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-screen-2xl w-full">
+                    <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-screen-2xl">
                         <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
                             <div className=" w-full">
                                 <div className=" max-w-[630px]">
@@ -196,6 +198,38 @@ export default function Home() {
                 </div>
             </section>
             {/* Accordion */}
+
+            {/* Background Image Test */}
+            <section className=" min-h-full flex flex-col items-center justify-between">
+                <div className=" relative w-full">
+                    <div className=" absolute -z-10 w-full ">
+                        <Image
+                            alt="test image"
+                            src={slide_1_bg}
+                            placeholder="blur"
+                            quality={100}
+                            style={{
+                                width: "100%",
+                                height: "100%",
+                                minHeight: "400px",
+                                maxHeight: "600px",
+                                objectFit: "cover",
+                            }}
+                        />
+                    </div>
+                    <div className="container">
+                        <div className=" m-auto p-5 my-10 bg-white text-dark_2 text-2xl">
+                            Good to know You can set multiple icons by adding a
+                            number suffix to the file name. For example,
+                            icon1.png, icon2.png, etc. Numbered files will sort
+                            lexically. Favicons can only be set in the root /app
+                            segment. If you need more granularity, you can use
+                            icon.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Background Image Test */}
         </>
     );
 }
