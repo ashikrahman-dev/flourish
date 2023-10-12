@@ -6,6 +6,7 @@ import ConnectPeople from "/public/img/connect-new-people-img.png";
 import CallToActionBg from "/public/img/cta-section-bg.jpg";
 import Feedback from "./components/Feedback";
 import Link from "next/link";
+import Accordion from "./components/Accordion";
 
 export default function Home() {
     return (
@@ -183,6 +184,18 @@ export default function Home() {
                 </div>
             </section>
             {/* Call to action */}
+
+            {/* Accordion */}
+            <section className="py-[120px] bg-primary">
+                <div className="container px-5">
+                    <h3 className=" text-[40px] leading-[1.25em] text-white font-bold text-center mb-14">
+                        Frequently asked questions
+                    </h3>
+
+                    <Accordion />
+                </div>
+            </section>
+            {/* Accordion */}
         </>
     );
 }

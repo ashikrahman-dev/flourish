@@ -1,0 +1,6 @@
+.accordion-wrap .active {
+    display: block;
+}
+.accordion-wrap .inactive {
+    display: none;
+}
