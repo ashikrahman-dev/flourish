@@ -198,38 +198,6 @@ export default function Home() {
                 </div>
             </section>
             {/* Accordion */}
-
-            {/* Background Image Test */}
-            <section className=" min-h-full flex flex-col items-center justify-between">
-                <div className=" relative w-full">
-                    <div className=" absolute -z-10 w-full ">
-                        <Image
-                            alt="test image"
-                            src={slide_1_bg}
-                            placeholder="blur"
-                            quality={100}
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                minHeight: "400px",
-                                maxHeight: "600px",
-                                objectFit: "cover",
-                            }}
-                        />
-                    </div>
-                    <div className="container">
-                        <div className=" m-auto p-5 my-10 bg-white text-dark_2 text-2xl">
-                            Good to know You can set multiple icons by adding a
-                            number suffix to the file name. For example,
-                            icon1.png, icon2.png, etc. Numbered files will sort
-                            lexically. Favicons can only be set in the root /app
-                            segment. If you need more granularity, you can use
-                            icon.
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* Background Image Test */}
         </>
     );
 }

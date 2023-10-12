@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Slider() {
     return (
         <div>
-            <div className="min-h-[840px] h-full w-full">
+            <div className="min-h-[740px] md:min-h-[640px] xl:min-h-[840px] h-full w-full">
                 <div className="relative w-full">
                     <div className=" absolute -z-10 w-full">
-                        <div className="slide-bg-gradient absolute left-0 right-0 top-0 bottom-0 w-full h-full z-10"></div>
+                        <div className="slide-bg-gradient absolute left-0 right-0 top-0 bottom-0 z-10"></div>
                         <Image
                             alt="Slide 1"
                             src={slide_1_bg}
@@ -18,21 +18,18 @@ export default function Slider() {
                             quality={100}
                             sizes="100vw"
                             style={{
-                                width: "100%",
-                                height: "100%",
-                                minHeight: "600px",
-                                maxHeight: "840px",
                                 objectFit: "cover",
                             }}
+                            className="min-h-[740px] md:min-h-[640px] xl:min-h-[840px]"
                         />
                     </div>
 
                     <div className="container">
-                        <div className="slide-wrap h-full flex justify-center max-w-screen-2xl w-full min-h-[840px]">
-                            <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
+                        <div className="slide-wrap h-full flex justify-center min-h-[740px] md:min-h-[640px] xl:min-h-[840px] px-5">
+                            <div className="text-white flex items-center w-full flex-col-reverse justify-center lg:flex-row gap-10">
                                 <div className=" w-full">
                                     <div className=" max-w-[520px]">
-                                        <h1 className=" text-[52px] leading-[1.19em] text-white font-semibold">
+                                        <h1 className="text-[36px] lg:text-[40px] xl:text-[52px] leading-[1.19em] text-white font-semibold">
                                             We help you help more people, no
                                             matter your method.
                                         </h1>
@@ -51,12 +48,12 @@ export default function Slider() {
                                     </div>
                                 </div>
                                 <div className=" w-full flex justify-start xl:justify-end ">
-                                    <div className="bg-clip-path bg-no-repeat max-w-[382px] h-full py-3 w-full">
-                                        <div className="ps-14 ">
-                                            <h4 className=" text-[26px] text-dark_1 font-bold leading-[1.38em]">
+                                    <div className="bg-clip-path bg-no-repeat max-w-[328px] xl:max-w-[382px] h-full py-3 w-full">
+                                        <div className="ps-14 xl:ps-16 ">
+                                            <h4 className="text-[20px] xl:text-[26px] text-dark_1 font-bold leading-[1.38em]">
                                                 Sarah West
                                             </h4>
-                                            <p className="font-mulish text-dark_2 text-sm leading-[1.71em] font-normal">
+                                            <p className="font-mulish text-dark_2 text-xs xl:text-sm leading-[1.71em] font-normal">
                                                 Somatic Therapist & Nature-Based
                                                 Soul Guide
                                             </p>
