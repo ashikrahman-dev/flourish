@@ -10,9 +10,9 @@ export default function Navbar() {
         <>
             <section className="">
                 {/* Topbar - Start */}
-                <div className="bg-primary py-[13px] flex px-5">
+                <div className="bg-primary py-2 lg:py-[13px] flex px-5">
                     <div className="container font-mulish flex justify-center md:justify-between">
-                        <div className="topbar-contact-info text-dark_5 flex gap-5 lg:gap-9 text-sm lg:text-base">
+                        <div className="topbar-contact-info text-dark_5 flex gap-3 lg:gap-9 text-xs sm:text-sm lg:text-base">
                             <Link
                                 href="tel:0118005678"
                                 className="flex items-center gap-[5px] lg:gap-[10px]"
@@ -64,7 +64,7 @@ export default function Navbar() {
                 </div>
                 {/* Topbar - Start */}
                 {/* Navbar menu -/start */}
-                <nav className="bg-dark_6 py-6 px-5">
+                <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5">
                     <div className="container font-mulish flex justify-between items-center">
                         <div className="logo-search-area flex align-middle items-center gap-[60px] lg:gap-8">
                             <Link href={"/"} className="logo">
