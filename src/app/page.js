@@ -8,8 +8,6 @@ import Feedback from "./components/Feedback";
 import Link from "next/link";
 import Accordion from "./components/Accordion";
 
-import slide_1_bg from "/public/img/slide-1-bg.jpg";
-
 export default function Home() {
     return (
         <>

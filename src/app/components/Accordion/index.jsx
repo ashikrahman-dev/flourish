@@ -7,7 +7,7 @@ const accordionData = [
     {
         id: 1,
         question: "What about negative reviews?",
-        answer: "Having some negative reviews is actually really helpful for building trust! Research has shown that a product with negative reviews is more trustworthy, receives more engagement, and converts 85% more often than one without. In the rare cases that a negative review is unreasonably nasty, misleading, or written by someone who did not work with you, you can submit a complaint, and the review may be removed on a case-by-case basis. If several guides submit legitimate complaints about the same user, all their reviews will be removed and the user banned. You can also respond to reviews, and users can upvote and downvote reviews, bringing the best reviews to the top.",
+        answer: "Having some negative reviews is actually really helpful for building trust! Research has shown that a product with negative reviews is more trustworthy, receives more engagement, and converts 85% more often than one without. <br><br> In the rare cases that a negative review is unreasonably nasty, misleading, or written by someone who did not work with you, you can submit a complaint, and the review may be removed on a case-by-case basis. If several guides submit legitimate complaints about the same user, all their reviews will be removed and the user banned. You can also respond to reviews, and users can upvote and downvote reviews, bringing the best reviews to the top.",
     },
     {
         id: 2,
@@ -86,11 +86,13 @@ export default function Accordion() {
                         </div>
                     </div>
                     <div
-                        className={`accordion-content text-lg text-dark_6 leading-[1.88em] font-mulish pt-6  ${
+                        className={`accordion-content text-lg text-dark_6 leading-[1.88em] max-w-[75vw] font-mulish pt-6  ${
                             isActive === index ? "active" : "inactive"
                         }`}
                     >
-                        {item.answer}
+                        <div
+                            dangerouslySetInnerHTML={{ __html: item.answer }}
+                        />
                     </div>
                 </div>
             ))}
