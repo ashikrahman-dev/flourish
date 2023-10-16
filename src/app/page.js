@@ -58,9 +58,9 @@ export default function Home() {
             {/* Feedback */}
 
             {/* Connect new people */}
-            <section className="bg-primary_shade_4 pb-[60px] lg:pb-20 xl:pb-[100px] 2xl:pb-[120px] pt-[80px]">
+            <section className="bg-primary_shade_4 pb-[60px] lg:pb-20 xl:pb-[100px] 2xl:pb-[120px] pt-8 lg:pt-10 xl:pt-14 2xl:pt-20">
                 <div className="container px-5">
-                    <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-12">
+                    <div className="flex flex-col lg:flex-row w-full items-center mx-auto text-center lg:text-left text-dark_6 gap-10 xl:gap-12">
                         <div className=" w-full">
                             <Image
                                 alt="Feedback Image"

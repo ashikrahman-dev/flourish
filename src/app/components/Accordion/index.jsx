@@ -50,8 +50,8 @@ export default function Accordion() {
     return (
         <>
             {accordionData.map((item, index) => (
-                <div key={item.id} className="accordion-wrap  mb-[30px]">
-                    <div className="accordion-title flex justify-between border-b border-primary_shade_2 border-opacity-[0.15] pb-[30px] cursor-pointer">
+                <div key={item.id} className="accordion-wrap mb-5 lg:mb-[30px]">
+                    <div className="accordion-title flex justify-between border-b border-primary_shade_2 border-opacity-[0.15] pb-5 lg:pb-[30px] cursor-pointer">
                         <h5
                             onClick={() => toggleAccordion(index)}
                             className={`text-base md:text-lg lg:text-xl font-semibold text-white leading-[1.5em] ${
