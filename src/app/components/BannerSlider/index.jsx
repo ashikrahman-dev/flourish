@@ -93,13 +93,13 @@ export function BannerSlider() {
 
                                     <div className="container">
                                         <div className="slide-wrap h-full flex justify-center min-h-[560px] sm:min-h-[600px] md:min-h-[640px] xl:min-h-[840px] px-5">
-                                            <div className="text-white flex items-center w-full flex-col-reverse justify-center lg:flex-row gap-8">
+                                            <div className="text-white flex items-center w-full flex-col-reverse justify-center lg:flex-row gap-3 sm:gap-5 md:gap-10 pb-12 sm:pb-6 md:pb-0">
                                                 <div className=" w-full">
                                                     <div className=" max-w-[520px]">
                                                         <h1 className="text-[32px] lg:text-[40px] xl:text-[52px] leading-[1.19em] text-white font-semibold">
                                                             {slide.title}
                                                         </h1>
-                                                        <p className="font-mulish text-base font-normal leading-[1.87em] mt-3 lg:mt-5">
+                                                        <p className="font-mulish text-base font-normal leading-[1.2em] md:leading-[1.8em] mt-3 lg:mt-5">
                                                             {slide.content}
                                                         </p>
                                                         <Link
@@ -111,14 +111,14 @@ export function BannerSlider() {
                                                     </div>
                                                 </div>
                                                 <div className=" w-full flex justify-start xl:justify-end ">
-                                                    <div className="bg-clip-path bg-no-repeat max-w-[328px] xl:max-w-[382px] h-full py-3 w-full">
+                                                    <div className="bg-clip-path bg-no-repeat max-w-[328px] xl:max-w-[382px] h-full  w-full">
                                                         <div className="ps-11 sm:ps-14 xl:ps-16 py-4">
                                                             <h4 className=" text-lg sm:text-xl xl:text-[26px] text-dark_1 font-bold leading-[1.38em]">
                                                                 {
                                                                     slide.reviewerName
                                                                 }
                                                             </h4>
-                                                            <p className="font-mulish text-dark_2 text-xs xl:text-sm leading-[1.2em] font-normal">
+                                                            <p className="font-mulish text-dark_2 text-xs xl:text-sm leading-[1.2em] font-normal mb-1 md:mb-0">
                                                                 {slide.comment}
                                                             </p>
                                                             <p className="font-mulish text-primary text-xs sm:text-sm leading-[1.5em] font-normal flex gap-1 items-center">
