@@ -116,7 +116,7 @@ export default function Home() {
                     <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-full xl:max-w-screen-2xl">
                         <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
                             <div className=" w-full">
-                                <div className=" max-w-[630px]">
+                                <div className=" max-w-[300px] sm:max-w-[450px] md:max-w-[630px]">
                                     <h2 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] leading-[1.25em] text-white font-semibold">
                                         We make reaching new people easy, so you
                                         can focus on helping them.
