@@ -68,7 +68,7 @@ export function BannerSlider() {
                 pagination: false,
                 resetProgress: true,
             }}
-            aria-label="React Splide Example"
+            aria-label="Banner Slider"
         >
             <div>
                 <SplideTrack>

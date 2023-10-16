@@ -1,0 +1,32 @@
+.review-slider-wrap {
+    position: relative;
+}
+.review-slider-wrap::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 191px;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, #F3EDEB 2.62%, rgba(243, 237, 235, 0.00) 100%);
+    z-index: 999;
+}
+.review-slider-wrap::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 191px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #F3EDEB 2.62%, rgba(243, 237, 235, 0.00) 100%);
+    z-index: 999;
+}
+
+/* .splide__slide {
+    transform: scale(.7);
+}
+
+.splide__slide.is-visible.is-active {
+    transform: scale(1);
+    z-index: 99;
+} */
