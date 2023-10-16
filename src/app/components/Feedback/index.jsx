@@ -5,7 +5,7 @@ import FeedbackImage from "/public/img/reviews-img.svg";
 export default function Feedback() {
     return (
         <>
-            <section className="bg-primary_shade_4 py-[120px]">
+            <section className="bg-primary_shade_4 py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]">
                 <div className="container px-5">
                     <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-28">
                         <div className="w-full">

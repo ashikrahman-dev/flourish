@@ -4,3 +4,64 @@
 .accordion-wrap .inactive {
     display: none;
 }
+
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.20) !important;
+    fill: rgba(255, 255, 255, 0.20) !important;
+    backdrop-filter: blur(5px) !important;
+    width: 48px !important;
+    height: 48px !important;
+    opacity: 1 !important;    
+    transition: all 100ms linear !important;
+}
+
+.splide__arrow--prev {
+    left: 145px !important;
+    @media (max-width: 1536px) {
+        left: 40px !important;
+    }
+    @media (max-width: 1280px) {
+        left: 50px !important;
+    }
+    @media (max-width: 1024px) {
+        left: 50px !important;
+    }
+    @media (max-width: 768px) {
+        left: 30px !important;
+    }
+}
+
+.splide__arrow--next {
+    right: 145px !important;
+    @media (max-width: 1536px) {
+        right: 40px !important;
+    }
+    @media (max-width: 1280px) {
+        right: 50px !important;
+    }
+    @media (max-width: 1024px) {
+        right: 50px !important;
+    }
+    @media (max-width: 768px) {
+        right: 30px !important;
+    }
+}
+
+.splide__arrow svg * {
+    fill: transparent !important;
+}
+
+.splide__arrow:hover {
+    background: #884A39 !important;
+}
+
+.my-slider-progress {
+    background: #ccc;
+}
+
+.my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+}

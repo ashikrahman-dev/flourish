@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ProfileViewImage from "/public/img/how-it-work-section-img.png";
-import CounterUpSec from "/public/img/counterp-section-img.svg";
 import ConnectPeople from "/public/img/connect-new-people-img.png";
 import CallToActionBg from "/public/img/cta-section-bg.jpg";
 import Feedback from "./components/Feedback";
@@ -8,6 +7,7 @@ import Link from "next/link";
 import Accordion from "./components/Accordion";
 
 import { BannerSlider } from "./components/BannerSlider";
+import CounterUp from "./components/CounterUp";
 
 export default function Home() {
     return (
@@ -15,12 +15,12 @@ export default function Home() {
             <BannerSlider />
 
             {/* How it works */}
-            <section className="bg-primary_shade_4 py-[120px]">
+            <section className="bg-primary_shade_4 py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]">
                 <div className="container px-5">
-                    <h2 className="text-[52px] leading-[1.19em] font-bold text-dark_1 text-center">
+                    <h2 className="text-[36px] md:text-[40px] lg:text-[44px] xl:text-[52px] leading-[1.19em] font-bold text-dark_1 text-center">
                         How it works
                     </h2>
-                    <div className="flex w-full mt-[120px] items-center max-w-[1180px] mx-auto gap-12 lg:gap-36 flex-col lg:flex-row text-center lg:text-left">
+                    <div className="flex w-full mt-[40px] lg:mt-[60px] xl:mt-[80px] 2xl:mt-[100px] items-center max-w-[1180px] mx-auto gap-8 md:gap-12 lg:gap-16 xl:gap-36 flex-col lg:flex-row text-center lg:text-left">
                         <div className="w-full flex justify-center">
                             <Image
                                 src={ProfileViewImage}
@@ -36,10 +36,10 @@ export default function Home() {
                             />
                         </div>
                         <div className="w-full">
-                            <h3 className="text-dark_1 text-[40px] leading-[1.25em] font-bold mb-5">
+                            <h3 className="text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] text-dark_1 leading-[1.25em] font-bold mb-3 md:mb-5">
                                 Share your practice
                             </h3>
-                            <p className=" font-mulish text-dark_2 text-xl leading-[1.5em] font-normal">
+                            <p className=" font-mulish text-dark_2 text-base md:text-lg lg:text-xl leading-[1.5em] font-normal">
                                 Create a profile, with the flexibility to
                                 present your practice as it is.
                             </p>
@@ -50,58 +50,7 @@ export default function Home() {
             {/* How it works */}
 
             {/* CounterUp section */}
-            <section className="py-[120px] bg-primary">
-                <div className="container px-5">
-                    <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-32">
-                        <div className=" w-full">
-                            <ul className=" font-mulish">
-                                <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
-                                        88%
-                                    </div>
-                                    <div className="w-full text-left">
-                                        People trust online reviews on
-                                        third-party platforms as much as
-                                        personal recommendations1
-                                    </div>
-                                </li>
-                                <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
-                                        +380%
-                                    </div>
-                                    <div className="w-full text-left">
-                                        Having 5+ reviews improves sales by 380%
-                                        for high-end products3
-                                    </div>
-                                </li>
-                                <li className=" flex border-b border-primary_shade_2 pb-[30px] border-opacity-[0.15] items-center gap-10 xl:gap-20">
-                                    <div className=" text-white text-[60px] xl:text-[96px] font-bold min-w-[322px] w-full text-center">
-                                        +85%
-                                    </div>
-                                    <div className="w-full text-left">
-                                        Having some negative reviews increases
-                                        conversions by 85% and increasing trust
-                                        and engagement
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className=" w-full flex justify-center">
-                            <Image
-                                alt="Section Image"
-                                src={CounterUpSec}
-                                sizes="100vw"
-                                quality={100}
-                                style={{
-                                    width: "100%",
-                                    maxWidth: "503px",
-                                    height: "auto",
-                                }}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <CounterUp />
             {/* CounterUp section */}
 
             {/* Feedback */}
@@ -187,7 +136,7 @@ export default function Home() {
             {/* Call to action */}
 
             {/* Accordion */}
-            <section className="py-[120px] bg-primary">
+            <section className="py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px] bg-primary">
                 <div className="container px-5">
                     <h3 className=" text-[40px] leading-[1.25em] text-white font-bold text-center mb-14">
                         Frequently asked questions

@@ -16,7 +16,7 @@ export default function Footer() {
 
                     {/* Footer menu */}
                     <div className="">
-                        <ul className="text-sm lg:text-base font-semibold flex list-disc gap-7 lg:gap-14 flex-wrap">
+                        <ul className="text-sm lg:text-base font-semibold flex list-disc gap-6 lg:gap-14 flex-wrap justify-center">
                             <li>
                                 <Link href={"/"}>About</Link>
                             </li>
