@@ -58,7 +58,7 @@ export default function Home() {
             {/* Feedback */}
 
             {/* Connect new people */}
-            <section className="bg-primary_shade_4 pb-[120px] pt-[80px]">
+            <section className="bg-primary_shade_4 pb-[60px] lg:pb-20 xl:pb-[100px] 2xl:pb-[120px] pt-[80px]">
                 <div className="container px-5">
                     <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-12">
                         <div className=" w-full">
@@ -76,16 +76,16 @@ export default function Home() {
                             />
                         </div>
                         <div className="w-full">
-                            <h3 className="text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
+                            <h3 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
                                 Connect with new people ready for you
                             </h3>
-                            <p className="text-dark_2 font-mulish text-xl leading-[1.5em] font-normal mb-7">
+                            <p className="text-dark_2 font-mulish text-base md:text-lg lg:xl:text-xl leading-[1.5em] font-normal mb-7">
                                 Our unique search system connects you with
                                 people searching for what you can help with -
                                 not just people who already know the name of
                                 your method.
                             </p>
-                            <p className=" text-dark_2 font-mulish text-xl leading-[1.5em] font-normal">
+                            <p className=" text-dark_2 font-mulish text-base md:text-lg lg:xl:text-xl leading-[1.5em] font-normal">
                                 Your reviews and verified credentials help them
                                 choose you with confidence.
                             </p>
@@ -96,7 +96,7 @@ export default function Home() {
             {/* Connect new people */}
 
             {/* Call to action */}
-            <section className="relative min-h-[490px] h-full w-full px-5">
+            <section className="relative min-h-[280px] md:min-h-[400px] lg:min-h-[490px] h-full w-full">
                 <div className="">
                     <Image
                         alt="Call to action bg image"
@@ -112,18 +112,18 @@ export default function Home() {
                     />
                 </div>
 
-                <div className="container">
-                    <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-screen-2xl">
+                <div className="container px-5">
+                    <div className="slide-wrap z-50 absolute h-full flex justify-center max-w-full xl:max-w-screen-2xl">
                         <div className="text-white flex items-center w-full flex-col-reverse justify-center xl:flex-row gap-10">
                             <div className=" w-full">
                                 <div className=" max-w-[630px]">
-                                    <h1 className=" text-[40px] leading-[1.25em] text-white font-semibold">
+                                    <h2 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] leading-[1.25em] text-white font-semibold">
                                         We make reaching new people easy, so you
                                         can focus on helping them.
-                                    </h1>
+                                    </h2>
                                     <Link
                                         href={"/"}
-                                        className=" text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[18px] px-11 inline-flex mt-12 hover:bg-dark_2 transition-colors duration-200"
+                                        className="text-base md:text-lg lg:text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11 inline-flex mt-6 lg:mt-12 hover:bg-dark_2 transition-colors duration-200"
                                     >
                                         Sign up for free
                                     </Link>
@@ -138,7 +138,7 @@ export default function Home() {
             {/* Accordion */}
             <section className="py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px] bg-primary">
                 <div className="container px-5">
-                    <h3 className=" text-[40px] leading-[1.25em] text-white font-bold text-center mb-14">
+                    <h3 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] leading-[1.25em] text-white font-bold text-center mb-14">
                         Frequently asked questions
                     </h3>
 

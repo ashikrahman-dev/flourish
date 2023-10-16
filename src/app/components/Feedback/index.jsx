@@ -9,11 +9,11 @@ export default function Feedback() {
                 <div className="container px-5">
                     <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-28">
                         <div className="w-full">
-                            <h3 className="text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
+                            <h3 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
                                 {`It's simple: independent reviews help people
                                 trust you more.`}
                             </h3>
-                            <p className=" text-dark_2 font-mulish text-xl leading-[1.5em] font-normal">
+                            <p className=" text-dark_2 font-mulish text-base md:text-lg lg:xl:text-xl leading-[1.5em] font-normal">
                                 Duis aute irure dolor in reprehenderit in
                                 voluptate velit esse cillum dolore eu fugiat
                                 nulla pariatu

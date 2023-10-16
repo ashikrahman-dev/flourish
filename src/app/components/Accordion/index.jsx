@@ -50,14 +50,11 @@ export default function Accordion() {
     return (
         <>
             {accordionData.map((item, index) => (
-                <div
-                    key={item.id}
-                    onClick={() => toggleAccordion(index)}
-                    className="accordion-wrap  mb-[30px]"
-                >
+                <div key={item.id} className="accordion-wrap  mb-[30px]">
                     <div className="accordion-title flex justify-between border-b border-primary_shade_2 border-opacity-[0.15] pb-[30px] cursor-pointer">
                         <h5
-                            className={`text-xl font-semibold text-white leading-[1.5em] ${
+                            onClick={() => toggleAccordion(index)}
+                            className={`text-base md:text-lg lg:text-xl font-semibold text-white leading-[1.5em] ${
                                 isActive === index ? "active" : ""
                             }`}
                         >
@@ -86,7 +83,7 @@ export default function Accordion() {
                         </div>
                     </div>
                     <div
-                        className={`accordion-content text-lg text-dark_6 leading-[1.88em] max-w-[75vw] font-mulish pt-6  ${
+                        className={`accordion-content text-sm md:text-base lg:text-lg text-dark_6 leading-[1.4em] md:leading-[1.88em] max-w-[75vw] font-mulish pt-6  ${
                             isActive === index ? "active" : "inactive"
                         }`}
                     >
