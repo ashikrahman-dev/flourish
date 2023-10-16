@@ -1,17 +1,18 @@
 import Image from "next/image";
-import Slider from "./components/Slider";
 import ProfileViewImage from "/public/img/how-it-work-section-img.png";
-import CounterUpSec from "/public/img/counterup-section-img.svg";
+import CounterUpSec from "/public/img/counterp-section-img.svg";
 import ConnectPeople from "/public/img/connect-new-people-img.png";
 import CallToActionBg from "/public/img/cta-section-bg.jpg";
 import Feedback from "./components/Feedback";
 import Link from "next/link";
 import Accordion from "./components/Accordion";
 
+import { BannerSlider } from "./components/BannerSlider";
+
 export default function Home() {
     return (
         <>
-            <Slider />
+            <BannerSlider />
 
             {/* How it works */}
             <section className="bg-primary_shade_4 py-[120px]">

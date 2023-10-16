@@ -4,7 +4,7 @@ import slide_1_bg from "/public/img/slide-1-bg.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Slider() {
+export default function SingleSlide() {
     return (
         <div>
             <div className="min-h-[740px] md:min-h-[640px] xl:min-h-[840px] h-full w-full">
