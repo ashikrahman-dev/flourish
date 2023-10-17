@@ -58,7 +58,6 @@ const BannerSlideData = [
 export function BannerSlider() {
     return (
         <Splide
-            hasTrack={false}
             options={{
                 rewind: true,
                 type: "loop",
@@ -68,9 +67,10 @@ export function BannerSlider() {
                 pagination: false,
                 resetProgress: true,
             }}
-            aria-label="Banner Slider"
+            aria-labelledby="autoplay-example-heading"
+            hasTrack={false}
         >
-            <div>
+            <div style={{ position: "relative" }}>
                 <SplideTrack>
                     {BannerSlideData.map((slide, index) => (
                         <SplideSlide key={index}>
@@ -204,9 +204,126 @@ export function BannerSlider() {
                 </button>
             </div>
 
-            <div class="my-slider-progress">
-                <div class="my-slider-progress-bar"></div>
+            <div className="splide__progress">
+                <div className="splide__progress__bar" />
             </div>
+
+            <button className="splide__toggle">
+                <span className="splide__toggle__play">
+                    <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g filter="url(#filter0_b_3608_12243)">
+                            <circle
+                                cx="24"
+                                cy="24"
+                                r="24"
+                                transform="matrix(-1 0 0 1 48 0)"
+                                fill="white"
+                                fillOpacity="0.2"
+                            />
+                        </g>
+                        <path
+                            d="M29.9398 20.4602L24.1398 17.1202C22.6998 16.2802 20.9598 16.2802 19.5197 17.1202C18.0797 17.9602 17.2197 19.4402 17.2197 21.1202V27.8202C17.2197 29.4802 18.0797 30.9802 19.5197 31.8202C20.2398 32.2402 21.0398 32.4402 21.8198 32.4402C22.6198 32.4402 23.3998 32.2402 24.1198 31.8202L29.9198 28.4802C31.3598 27.6402 32.2198 26.1602 32.2198 24.4802C32.2598 22.8002 31.3998 21.3002 29.9398 20.4602Z"
+                            fill="white"
+                        />
+                        <defs>
+                            <filter
+                                id="filter0_b_3608_12243"
+                                x="-10"
+                                y="-10"
+                                width="68"
+                                height="68"
+                                filterUnits="userSpaceOnUse"
+                                colorInterpolationFilters="sRGB"
+                            >
+                                <feFlood
+                                    floodOpacity="0"
+                                    result="BackgroundImageFix"
+                                />
+                                <feGaussianBlur
+                                    in="BackgroundImageFix"
+                                    stdDeviation="5"
+                                />
+                                <feComposite
+                                    in2="SourceAlpha"
+                                    operator="in"
+                                    result="effect1_backgroundBlur_3608_12243"
+                                />
+                                <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="effect1_backgroundBlur_3608_12243"
+                                    result="shape"
+                                />
+                            </filter>
+                        </defs>
+                    </svg>
+                </span>
+                <span className="splide__toggle__pause">
+                    <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g filter="url(#filter0_b_3608_12237)">
+                            <circle
+                                cx="24"
+                                cy="24"
+                                r="24"
+                                transform="matrix(-1 0 0 1 48 0)"
+                                fill="white"
+                                fillOpacity="0.2"
+                            />
+                        </g>
+                        <path
+                            d="M21.1767 29.7808V18.2196C21.1767 17.3039 20.8653 16.9414 20.0712 16.9414H18.0469C17.2528 16.9414 16.9414 17.3039 16.9414 18.2196V29.7808C16.9414 30.6966 17.2528 31.0591 18.0469 31.0591H20.0556C20.8653 31.0591 21.1767 30.6966 21.1767 29.7808Z"
+                            fill="white"
+                        />
+                        <path
+                            d="M31.059 29.7808V18.2196C31.059 17.3039 30.7465 16.9414 29.9494 16.9414H27.9333C27.1363 16.9414 26.8237 17.3039 26.8237 18.2196V29.7808C26.8237 30.6966 27.1363 31.0591 27.9333 31.0591H29.9494C30.7465 31.0591 31.059 30.6966 31.059 29.7808Z"
+                            fill="white"
+                        />
+                        <defs>
+                            <filter
+                                id="filter0_b_3608_12237"
+                                x="-10"
+                                y="-10"
+                                width="68"
+                                height="68"
+                                filterUnits="userSpaceOnUse"
+                                colorInterpolationFilters="sRGB"
+                            >
+                                <feFlood
+                                    flood-opacity="0"
+                                    result="BackgroundImageFix"
+                                />
+                                <feGaussianBlur
+                                    in="BackgroundImageFix"
+                                    stdDeviation="5"
+                                />
+                                <feComposite
+                                    in2="SourceAlpha"
+                                    operator="in"
+                                    result="effect1_backgroundBlur_3608_12237"
+                                />
+                                <feBlend
+                                    mode="normal"
+                                    in="SourceGraphic"
+                                    in2="effect1_backgroundBlur_3608_12237"
+                                    result="shape"
+                                />
+                            </filter>
+                        </defs>
+                    </svg>
+                </span>
+            </button>
         </Splide>
     );
 }

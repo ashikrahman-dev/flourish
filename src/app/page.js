@@ -8,11 +8,14 @@ import Accordion from "./components/Accordion";
 
 import { BannerSlider } from "./components/BannerSlider";
 import CounterUp from "./components/CounterUp";
+import AutoplayExample from "./components/AutoplayExample";
 
 export default function Home() {
     return (
         <>
             <BannerSlider />
+
+            {/* <AutoplayExample /> */}
 
             {/* How it works */}
             <section className="bg-primary_shade_4 py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]">

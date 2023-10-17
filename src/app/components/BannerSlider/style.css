@@ -72,13 +72,27 @@
     background: #884A39 !important;
 }
 
-.my-slider-progress {
-    background: #ccc;
+.splide__progress {
+    /* fill: rgba(255, 255, 255, 1); */
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(5px);
+
+
+    height: 8px;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    width: 100%;
 }
 
-.my-slider-progress-bar {
-    background: greenyellow;
-    height: 2px;
-    transition: width 400ms ease;
-    width: 0;
+.splide__progress__bar {
+    background: rgba(255, 255, 255, .3) !important;
+    height: 8px;
+}
+
+.splide__toggle {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    opacity: .8;
 }

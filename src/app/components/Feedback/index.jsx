@@ -99,7 +99,7 @@ export default function Feedback() {
                                     drag: "free",
                                     autoStart: true,
                                     autoScroll: {
-                                        speed: -1,
+                                        speed: 1,
                                     },
                                 }}
                                 aria-label="React Splide Example"
