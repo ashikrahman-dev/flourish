@@ -110,8 +110,10 @@
         width: 35px ;
         height: 35px;
     }
+    .splide__progress {    
+        height: 5px;
+    }
     .splide__progress__bar {
-        background: rgba(255, 255, 255, .3) !important;
         height: 5px;
     }
 }
