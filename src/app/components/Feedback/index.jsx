@@ -65,8 +65,8 @@ export default function Feedback() {
         <>
             <section className="bg-primary_shade_4 py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px]">
                 <div className="container px-5">
-                    <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row text-center lg:text-left text-dark_6 gap-10 xl:gap-28">
-                        <div className="w-full">
+                    <div className="flex w-full items-center mx-auto flex-col-reverse lg:flex-row justify-between text-center lg:text-left text-dark_6 gap-10 xl:gap-2">
+                        <div className="w-full basis-1/3">
                             <h3 className="text-[24px] md:text-[30px] lg:xl:text-[36px] xl:text-[40px] text-dark_1 leading-[1.25em] font-bold mb-5">
                                 {`It's simple: independent reviews help people
                                 trust you more.`}
@@ -77,7 +77,7 @@ export default function Feedback() {
                                 nulla pariatu
                             </p>
                         </div>
-                        <div className="w-full review-slider-wrap ">
+                        <div className="w-full review-slider-wrap basis-2/3 flex justify-end">
                             {/* Client feedback slider */}
 
                             <Splide
@@ -116,15 +116,23 @@ export default function Feedback() {
                                         },
                                         450: {
                                             perPage: 1,
-                                            height: "29em",
+                                            height: "31em",
                                         },
                                         410: {
                                             perPage: 1,
-                                            height: "33em",
+                                            height: "30em",
                                         },
-                                        375: {
+                                        395: {
                                             perPage: 1,
-                                            height: "37.5em",
+                                            height: "32em",
+                                        },
+                                        350: {
+                                            perPage: 1,
+                                            height: "36em",
+                                        },
+                                        340: {
+                                            perPage: 1,
+                                            height: "38em",
                                         },
                                     },
                                 }}
@@ -134,10 +142,10 @@ export default function Feedback() {
                                     {reviewsData.map((data, index) => (
                                         <SplideSlide key={index}>
                                             <div className="w-full max-w-[630px]">
-                                                <div className="bg-white p-[30px] rounded-[14px] border border-[#E7DBD7] border-b-4 text-dark_3 font-mulish">
-                                                    <div className="flex justify-between items-center mb-4">
-                                                        <div className="flex gap-4">
-                                                            <div className="">
+                                                <div className="bg-white p-5 sm:p-[30px] rounded-[14px] border border-[#E7DBD7] border-b-4 text-dark_3 font-mulish">
+                                                    <div className="flex flex-col-reverse sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
+                                                        <div className="flex gap-2 sm:gap-4">
+                                                            <div className=" shrink-0">
                                                                 <Image
                                                                     src={
                                                                         data.userAvatar
@@ -154,12 +162,12 @@ export default function Feedback() {
                                                                 />
                                                             </div>
                                                             <div className="">
-                                                                <h6 className=" text-dark_1 text-base font-noto_serif font-semibold leading-[1.62em]">
+                                                                <h6 className="text-dark_1 text-base font-noto_serif font-semibold text-start leading-[1.62em]">
                                                                     {
                                                                         data.userName
                                                                     }
                                                                 </h6>
-                                                                <div className="flex text-dark_3 text-xs leading-[1.66em] font-normal gap-1 align-middle items-center">
+                                                                <div className="flex text-dark_3 text-[11px] sm:text-xs leading-[1.66em] font-normal gap-1 align-middle items-center">
                                                                     <span>
                                                                         <svg
                                                                             width="16"
@@ -185,7 +193,7 @@ export default function Feedback() {
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <p className="text-dark_3 text-sm leading-[1.71em]">
+                                                        <p className="text-dark_3 text-sm leading-[1.71em] text-start sm:text-center">
                                                             {data.reviewContent}
                                                         </p>
                                                     </div>
