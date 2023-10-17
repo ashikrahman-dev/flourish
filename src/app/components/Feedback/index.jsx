@@ -104,7 +104,27 @@ export default function Feedback() {
                                     breakpoints: {
                                         800: {
                                             perPage: 1,
-                                            height: "18em",
+                                            height: "20em",
+                                        },
+                                        600: {
+                                            perPage: 1,
+                                            height: "24em",
+                                        },
+                                        500: {
+                                            perPage: 1,
+                                            height: "28em",
+                                        },
+                                        450: {
+                                            perPage: 1,
+                                            height: "29em",
+                                        },
+                                        410: {
+                                            perPage: 1,
+                                            height: "33em",
+                                        },
+                                        375: {
+                                            perPage: 1,
+                                            height: "37.5em",
                                         },
                                     },
                                 }}

@@ -22,11 +22,11 @@
     z-index: 999;
 }
 
-/* .splide__slide {
-    transform: scale(.7);
+@media (max-width: 768px) {
+    .review-slider-wrap::before {
+        height: 0px;
+    }
+    .review-slider-wrap::after {
+        height: 0px;
+    }
 }
-
-.splide__slide.is-visible.is-active {
-    transform: scale(1);
-    z-index: 99;
-} */
