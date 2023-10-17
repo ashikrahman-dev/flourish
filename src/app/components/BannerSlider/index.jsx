@@ -66,6 +66,7 @@ export function BannerSlider() {
                 autoplay: true,
                 pagination: false,
                 resetProgress: true,
+                pauseOnHover: false,
             }}
             aria-labelledby="autoplay-example-heading"
             hasTrack={false}
