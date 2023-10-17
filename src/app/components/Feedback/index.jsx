@@ -101,6 +101,12 @@ export default function Feedback() {
                                     autoScroll: {
                                         speed: 1,
                                     },
+                                    breakpoints: {
+                                        800: {
+                                            perPage: 1,
+                                            height: "18em",
+                                        },
+                                    },
                                 }}
                                 aria-label="React Splide Example"
                             >
