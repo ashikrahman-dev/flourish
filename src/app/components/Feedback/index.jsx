@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+
 import "@splidejs/react-splide/css";
 
 import "./style.css";
@@ -88,13 +90,17 @@ export default function Feedback() {
                                     perMove: 1,
                                     autoplay: true,
                                     pagination: false,
-                                    resetProgress: true,
                                     direction: "ttb",
                                     height: "38em",
                                     arrows: false,
                                     perPage: 2,
                                     focus: "center",
                                     gap: "10px",
+                                    drag: "free",
+                                    autoStart: true,
+                                    autoScroll: {
+                                        speed: -1,
+                                    },
                                 }}
                                 aria-label="React Splide Example"
                             >
