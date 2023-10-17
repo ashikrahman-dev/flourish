@@ -95,4 +95,19 @@
     bottom: 30px;
     right: 30px;
     opacity: .8;
+    @media (max-width: 768px) {
+        bottom: 10px;
+        right: 10px;
+        span svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .splide__toggle span svg {
+        width: 35px ;
+        height: 35px;
+    }
 }
