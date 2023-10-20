@@ -95,7 +95,7 @@ export default function Navbar() {
                                 >
                                     Write a review
                                 </Link>
-                                <Link href="/about">Sign up</Link>
+                                <Link href="/signup">Sign up</Link>
                                 <Link href="/login">Login</Link>
                             </div>
                         </div>
