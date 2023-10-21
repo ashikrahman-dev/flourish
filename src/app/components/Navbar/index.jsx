@@ -72,8 +72,8 @@ export default function Navbar() {
                                     src={Logo}
                                     sizes="(max-width: 150px) 100vw, (max-width: 140px) 50vw, 33vw"
                                     alt="Logo"
-                                    width={150}
-                                    height={100}
+                                    priority={true}
+                                    className=" max-w-[150px] w-full"
                                 />
                             </Link>
                             <div className="search-area hidden lg:block">
