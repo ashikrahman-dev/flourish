@@ -1,10 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 export default function SignUpComponent() {
+    const [loading, setLoading] = useState(false);
+
     async function handleSubmit(event) {
         event.preventDefault();
+        setLoading(true);
 
         const data = {
             fName: String(event.target.firstName.value),
@@ -25,9 +28,19 @@ export default function SignUpComponent() {
 
         if (response.ok) {
             console.log("Message sent successfully.");
+            setLoading(false);
+
+            //Reset the form...
+            event.target.firstName.value = "";
+            event.target.lastName.value = "";
+            event.target.email.value = "";
+            event.target.checkbox.value = "";
+            event.target.websiteUrl.value = "";
+            event.target.commentText.value = "";
         }
         if (!response.ok) {
             console.log("Error sending message.");
+            setLoading(false);
         }
 
         console.log(data);
@@ -101,7 +114,8 @@ export default function SignUpComponent() {
                     <div className="">
                         <button
                             type="submit"
-                            className="text-base md:text-lg lg:text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11 inline-flex  hover:bg-dark_2 transition-colors duration-200 w-full justify-center font-noto_serif"
+                            disabled={loading}
+                            className="text-base md:text-lg lg:text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11 inline-flex  hover:bg-dark_2 transition-colors duration-200 w-full justify-center font-noto_serif disabled:bg-dark_5 disabled:text-dark_4"
                         >
                             Add profile
                         </button>
