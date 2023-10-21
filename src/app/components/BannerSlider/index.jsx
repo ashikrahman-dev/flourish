@@ -85,6 +85,7 @@ export function BannerSlider() {
                                             placeholder="blur"
                                             quality={100}
                                             sizes="100vw"
+                                            priority={true}
                                             style={{
                                                 objectFit: "cover",
                                             }}

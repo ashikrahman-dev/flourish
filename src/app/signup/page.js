@@ -24,7 +24,7 @@ export default function SignUp() {
                             </p>
                         </div>
                         <div className="w-full form-wrapper ">
-                            <div className="p-10 rounded-xl shadow-[5px_10px_30px_0px_rgba(0,0,0,0.07)]">
+                            <div className="p-5 md:p-10 rounded-xl shadow-[5px_10px_30px_0px_rgba(0,0,0,0.07)]">
                                 <h4 className="text-dark_1 font-extrabold text-[26px] leading-9 text-center mb-7">
                                     Sign up
                                 </h4>
