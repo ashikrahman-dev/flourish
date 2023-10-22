@@ -3,3 +3,11 @@
     background-repeat: no-repeat;
     background-position: 20px 11px;
 }
+
+.nav-open {
+    left: 0 !important;
+}
+
+.nav-closed {
+    left: -320px !important;
+}

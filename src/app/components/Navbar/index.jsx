@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "/public/img/logo.svg";
 
 import "./style.css";
 
 export default function Navbar() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
     return (
         <>
             <section className="">
@@ -64,7 +68,7 @@ export default function Navbar() {
                 </div>
                 {/* Topbar - Start */}
                 {/* Navbar menu -/start */}
-                <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5 relative">
+                <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5">
                     <div className="container font-mulish flex justify-between items-center">
                         <div className="logo-search-area flex align-middle items-center gap-[60px] lg:gap-8">
                             <Link href={"/"} className="logo">
@@ -99,35 +103,92 @@ export default function Navbar() {
                                 <Link href="/login">Login</Link>
                             </div>
                         </div>
+                        <div className="block md:hidden">
+                            <button
+                                onClick={() => setIsNavOpen(!isNavOpen)}
+                                className=" z-20"
+                            >
+                                <span>
+                                    {isNavOpen ? (
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g clipPath="url(#clip0_14403_114019)">
+                                                <path
+                                                    d="M24 1.414L22.586 0L12 10.586L1.414 0L0 1.414L10.586 12L0 22.586L1.414 24L12 13.414L22.586 24L24 22.586L13.414 12L24 1.414Z"
+                                                    fill="#374957"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_14403_114019">
+                                                    <rect
+                                                        width="24"
+                                                        height="24"
+                                                        fill="white"
+                                                    />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    ) : (
+                                        <svg
+                                            width="26"
+                                            height="20"
+                                            viewBox="0 0 26 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M1 1H25M1 10H25M14.5 19H25"
+                                                stroke="#111827"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    )}
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                    <div className="absolute min-w-[270px] w-full max-w-[350px] bg-white  min-h-screen h-full top-0 left-0">
-                        <div className=" absolute right-0">Close</div>
-                        <div className=" py-8 px-5">
-                            <div className="search-area mb-8">
-                                <input
-                                    type="search"
-                                    name=""
-                                    id=""
-                                    className="bg-dark_7 border border-dark_6 w-full rounded-[50px] text-dark_3 font-medium py-2 pe-5 ps-[52px] outline-none focus:border-dark_3 transition-all duration-150"
-                                    placeholder="Search"
-                                />
-                            </div>
-                            <div className="">
-                                <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex flex-col gap-7">
-                                    <Link href={"/"}>Sign up as a guide</Link>
+                    <div>
+                        <nav
+                            className={`fixed min-w-[270px] w-full max-w-[310px] bg-white min-h-screen h-full top-0 left-0 overflow-x-hidden z-10 transition-all duration-500 ${
+                                isNavOpen ? "nav-open" : "nav-closed"
+                            }`}
+                        >
+                            <div className="pt-10 p-5">
+                                <div className="search-area mb-12">
+                                    <input
+                                        type="search"
+                                        name=""
+                                        id=""
+                                        className="bg-dark_7 border border-dark_6 w-full rounded-[50px] text-dark_3 font-medium py-2 pe-5 ps-[52px] outline-none focus:border-dark_3 transition-all duration-150"
+                                        placeholder="Search"
+                                    />
+                                </div>
+                                <div className="">
+                                    <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex flex-col gap-7">
+                                        <Link href={"/"}>
+                                            Sign up as a guide
+                                        </Link>
 
-                                    <Link
-                                        className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 w-fit"
-                                        href={"/"}
-                                    >
-                                        Write a review
-                                    </Link>
+                                        <Link
+                                            className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 w-fit"
+                                            href={"/"}
+                                        >
+                                            Write a review
+                                        </Link>
 
-                                    <Link href="/signup">Sign up</Link>
-                                    <Link href="/login">Login</Link>
+                                        <Link href="/signup">Sign up</Link>
+                                        <Link href="/login">Login</Link>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                 </nav>
                 {/* Navbar menu -/end */}
