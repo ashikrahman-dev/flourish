@@ -64,7 +64,7 @@ export default function Navbar() {
                 </div>
                 {/* Topbar - Start */}
                 {/* Navbar menu -/start */}
-                <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5">
+                <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5 relative">
                     <div className="container font-mulish flex justify-between items-center">
                         <div className="logo-search-area flex align-middle items-center gap-[60px] lg:gap-8">
                             <Link href={"/"} className="logo">
@@ -97,6 +97,35 @@ export default function Navbar() {
                                 </Link>
                                 <Link href="/signup">Sign up</Link>
                                 <Link href="/login">Login</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="absolute min-w-[270px] w-full max-w-[350px] bg-white  min-h-screen h-full top-0 left-0">
+                        <div className=" absolute right-0">Close</div>
+                        <div className=" py-8 px-5">
+                            <div className="search-area mb-8">
+                                <input
+                                    type="search"
+                                    name=""
+                                    id=""
+                                    className="bg-dark_7 border border-dark_6 w-full rounded-[50px] text-dark_3 font-medium py-2 pe-5 ps-[52px] outline-none focus:border-dark_3 transition-all duration-150"
+                                    placeholder="Search"
+                                />
+                            </div>
+                            <div className="">
+                                <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex flex-col gap-7">
+                                    <Link href={"/"}>Sign up as a guide</Link>
+
+                                    <Link
+                                        className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 w-fit"
+                                        href={"/"}
+                                    >
+                                        Write a review
+                                    </Link>
+
+                                    <Link href="/signup">Sign up</Link>
+                                    <Link href="/login">Login</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
