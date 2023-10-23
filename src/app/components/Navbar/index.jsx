@@ -156,9 +156,10 @@ export default function Navbar() {
                             </button>
                         </div>
                     </div>
+                    {/* Sidebar Navigation */}
                     <div>
                         <nav
-                            className={`fixed min-w-[250px] w-full max-w-[270px] sm:max-w-[310px] bg-white min-h-screen h-full top-0 left-0 overflow-x-hidden z-10 transition-all duration-500 ${
+                            className={`fixed min-w-[270px] w-full max-w-[270px] sm:max-w-[310px] bg-white min-h-screen h-full top-0 left-0 overflow-x-hidden z-10 transition-all duration-500 ${
                                 isNavOpen ? "nav-open" : "nav-closed"
                             }`}
                         >
@@ -192,6 +193,7 @@ export default function Navbar() {
                             </div>
                         </nav>
                     </div>
+                    {/* Sidebar Navigation */}
                 </nav>
                 {/* Navbar menu -/end */}
             </section>
