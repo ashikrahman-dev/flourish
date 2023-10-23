@@ -8,7 +8,6 @@ import Accordion from "./components/Accordion";
 
 import { BannerSlider } from "./components/BannerSlider";
 import CounterUp from "./components/CounterUp";
-import AutoplayExample from "./components/AutoplayExample";
 
 export default function Home() {
     return (
