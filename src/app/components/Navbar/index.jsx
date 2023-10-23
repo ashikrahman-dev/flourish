@@ -92,10 +92,12 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-3 lg:gap-6 items-center">
-                                <Link href={"/"}>Sign up as a guide</Link>
+                                <Link href="/guide-signup">
+                                    Sign up as a guide
+                                </Link>
                                 <Link
                                     className=" text-primary border-2 border-primary rounded-[50px] py-2 px-6"
-                                    href={"/"}
+                                    href="/"
                                 >
                                     Write a review
                                 </Link>
@@ -172,7 +174,7 @@ export default function Navbar() {
                                 </div>
                                 <div className="">
                                     <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex flex-col gap-7">
-                                        <Link href={"/"}>
+                                        <Link href="/guide-signup">
                                             Sign up as a guide
                                         </Link>
 
