@@ -90,12 +90,12 @@ export default function GuideSignUpComponent() {
                             className="py-5 px-6 rounded-xl h-[60px] w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4"
                         />
 
-                        <label className=" text-sm leading-[1.7em] text-dark_3 mt-[10px] flex gap-[10px]">
+                        <label className="text-sm leading-[1.7em] text-dark_3 mt-[10px] flex gap-1 flex-wrap">
                             <input
                                 autoComplete="off"
                                 type="checkbox"
                                 name="checkbox"
-                                className="w-5 h-5 text-[#596B36] appearance-none border border-[#596B36] checked:bg-[#596B36] checked:border-0 rounded-md bg-white"
+                                className="w-5 h-5 text-[#596B36] appearance-none border border-[#596B36] checked:bg-[#596B36] checked:border-0 rounded-md bg-white me-2"
                             />
                             By signing up, I agree to the{" "}
                             <Link
@@ -109,8 +109,9 @@ export default function GuideSignUpComponent() {
                                 href="/"
                                 className="text-info underline underline-offset-2"
                             >
-                                Terms of Service.
+                                Terms of Service
                             </Link>
+                            .
                         </label>
                     </div>
                     <div className="">
