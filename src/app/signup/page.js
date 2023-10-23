@@ -4,7 +4,7 @@ import SignUpComponent from "../components/SignUpComponent";
 export default function SignUp() {
     return (
         <>
-            <div className="py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px] px-5">
+            <div className="py-[60px] lg:py-20 xl:py-[100px] 2xl:py-[120px] px-5 bg-dark_7">
                 <div className="container">
                     <div className="flex flex-col-reverse lg:flex-row gap-10 md:gap-10 lg:gap-4 xl:gap-20 items-center">
                         <div className="w-full lg:pe-10">
@@ -23,8 +23,8 @@ export default function SignUp() {
                                 expand their profile.`}
                             </p>
                         </div>
-                        <div className="w-full form-wrapper ">
-                            <div className="p-4 py-10 md:p-10 rounded-xl shadow-[5px_10px_30px_0px_rgba(0,0,0,0.07)]">
+                        <div className="w-full form-wrapper">
+                            <div className="p-4 py-10 md:p-10 rounded-xl shadow-[5px_10px_30px_0px_rgba(0,0,0,0.07)] bg-white">
                                 <h4 className="text-dark_1 font-extrabold text-[26px] leading-9 text-center mb-7">
                                     Sign up
                                 </h4>
