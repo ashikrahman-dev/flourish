@@ -33,6 +33,7 @@ module.exports = {
             dark_7: "#F8F5F4",
             white: "#FFFFFF",
             info: "#37A4F6",
+            status_danger: "#F64545",
         },
     },
     plugins: [],
