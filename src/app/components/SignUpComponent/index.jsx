@@ -187,10 +187,10 @@ export default function SignUpComponent() {
                             type="submit"
                             // disabled={loading}
                             disabled={
-                                !(
-                                    (isTextValid == isEmailValid) ==
-                                    isTextareaValid
-                                ) == true
+                                !isTextValid ||
+                                !isEmailValid ||
+                                !isTextareaValid ||
+                                loading
                             }
                             className="text-base md:text-lg lg:text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11 inline-flex  hover:bg-dark_2 transition-colors duration-200 w-full justify-center font-noto_serif disabled:bg-dark_5 disabled:text-dark_4"
                         >
