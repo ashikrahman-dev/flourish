@@ -38,16 +38,11 @@ export default function WriteReview() {
                         </div>
                         <div className="w-2/3">
                             <div className="bg-white rounded-xl p-[30px] flex flex-col gap-[30px]">
-                                Lorem ipsum How it works: after you fill out the
-                                info below, a basic profile will be created for
-                                your guide, and be able to write your review.
-                                The guide will be invited to join Flourish and
-                                expand their profile. Lorem ipsum How it works:
-                                after you fill out the info below, a basic
-                                profile will be created for your guide, and you
-                                will be able to write your review. The guide
-                                will be invited to join Flourish and expand
-                                their profile. Test test
+                                <div>
+                                    <h2 className="text-[36px] md:text-[40px] lg:text-[44px] xl:text-[52px] leading-[1.19em] font-bold text-dark_1 text-center">
+                                        How it works
+                                    </h2>
+                                </div>
                             </div>
                         </div>
                     </div>
