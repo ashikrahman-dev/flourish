@@ -60,8 +60,8 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="topbar-menu text-dark_5 flex gap-10 text-sm lg:text-base">
-                                <Link href={"/"}>About</Link>
-                                <Link href={"/"}>Contact us</Link>
+                                <Link href="/">About</Link>
+                                <Link href="/">Contact us</Link>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
                 <nav className="bg-dark_6 py-3 sm:py-4 lg:py-6 px-5">
                     <div className="container font-mulish flex justify-between items-center">
                         <div className="logo-search-area flex align-middle items-center gap-[60px] lg:gap-8">
-                            <Link href={"/"} className="logo">
+                            <Link href="/" className="logo">
                                 <Image
                                     src={Logo}
                                     sizes="(max-width: 150px) 100vw, (max-width: 140px) 50vw, 33vw"
@@ -92,17 +92,30 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-3 lg:gap-6 items-center">
-                                <Link href="/guide-signup">
+                                <Link
+                                    className=" hover:text-primary transition-all duration-100"
+                                    href="/guide-signup"
+                                >
                                     Sign up as a guide
                                 </Link>
                                 <Link
-                                    className=" text-primary border-2 border-primary rounded-[50px] py-2 px-6"
-                                    href="/"
+                                    className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150"
+                                    href="/write-review"
                                 >
                                     Write a review
                                 </Link>
-                                <Link href="/signup">Sign up</Link>
-                                <Link href="/login">Login</Link>
+                                <Link
+                                    href="/signup"
+                                    className=" hover:text-primary transition-all duration-100"
+                                >
+                                    Sign up
+                                </Link>
+                                <Link
+                                    href="/login"
+                                    className=" hover:text-primary transition-all duration-100"
+                                >
+                                    Login
+                                </Link>
                             </div>
                         </div>
                         <div className="block md:hidden">
@@ -175,19 +188,32 @@ export default function Navbar() {
                                 </div>
                                 <div className="">
                                     <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex flex-col gap-7">
-                                        <Link href="/guide-signup">
+                                        <Link
+                                            href="/guide-signup"
+                                            className=" hover:text-primary transition-all duration-100"
+                                        >
                                             Sign up as a guide
                                         </Link>
 
                                         <Link
-                                            className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 w-fit"
-                                            href={"/"}
+                                            className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 w-fit hover:bg-primary hover:text-white transition-all duration-150"
+                                            href="/write-review"
                                         >
                                             Write a review
                                         </Link>
 
-                                        <Link href="/signup">Sign up</Link>
-                                        <Link href="/login">Login</Link>
+                                        <Link
+                                            href="/signup"
+                                            className=" hover:text-primary transition-all duration-100"
+                                        >
+                                            Sign up
+                                        </Link>
+                                        <Link
+                                            href="/login"
+                                            className=" hover:text-primary transition-all duration-100"
+                                        >
+                                            Login
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

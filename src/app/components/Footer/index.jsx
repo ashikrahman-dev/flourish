@@ -18,19 +18,44 @@ export default function Footer() {
                     <div className="">
                         <ul className="text-sm lg:text-base font-semibold flex list-disc gap-6 lg:gap-14 flex-wrap justify-center">
                             <li>
-                                <Link href={"/"}>About</Link>
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-dark_5 transition-all duration-100"
+                                >
+                                    About
+                                </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Contact us</Link>
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-dark_5 transition-all duration-100"
+                                >
+                                    Contact us
+                                </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Terms</Link>
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-dark_5 transition-all duration-100"
+                                >
+                                    Terms
+                                </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Privacy</Link>
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-dark_5 transition-all duration-100"
+                                >
+                                    Privacy
+                                </Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Cookies</Link>
+                                <Link
+                                    href={"/"}
+                                    className="hover:text-dark_5 transition-all duration-100"
+                                >
+                                    Cookies
+                                </Link>
                             </li>
                         </ul>
                     </div>
