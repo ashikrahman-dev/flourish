@@ -37,7 +37,7 @@ export default function WriteReview() {
                             </div>
                         </div>
                         <div className="w-2/3">
-                            <div className="bg-white rounded-xl p-10 flex flex-col gap-[30px]">
+                            <div className="bg-white rounded-xl p-[30px] flex flex-col gap-[30px]">
                                 Lorem ipsum How it works: after you fill out the
                                 info below, a basic profile will be created for
                                 your guide, and be able to write your review.
