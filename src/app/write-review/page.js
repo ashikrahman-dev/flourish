@@ -47,7 +47,7 @@ export default function WriteReview() {
                                 profile will be created for your guide, and you
                                 will be able to write your review. The guide
                                 will be invited to join Flourish and expand
-                                their profile.
+                                their profile. Test test
                             </div>
                         </div>
                     </div>
