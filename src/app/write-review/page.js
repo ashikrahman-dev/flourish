@@ -8,8 +8,8 @@ export default function WriteReview() {
         <>
             <div className="py-[60px] lg:py-20 px-5 bg-dark_7">
                 <div className="container">
-                    <div className="flex gap-[30px]">
-                        <div className=" w-1/3">
+                    <div className="flex flex-col md:flex-row gap-[30px]">
+                        <div className="w-full md:w-1/3">
                             <div className="bg-white rounded-xl p-10 flex flex-col items-center gap-5">
                                 <Image
                                     src={reviewerProfileImg}
@@ -36,13 +36,19 @@ export default function WriteReview() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="w-2/3">
+                        <div className="w-full md:w-2/3">
                             <div className="bg-white rounded-xl p-[30px] flex flex-col gap-[30px]">
                                 <div>
-                                    <h2 className="text-[36px] md:text-[40px] lg:text-[44px] xl:text-[52px] leading-[1.19em] font-bold text-dark_1 text-center">
-                                        How it works
+                                    <h2 className="text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] leading-[1.25em] font-bold text-dark_1 mb-5">
+                                        Write a review
                                     </h2>
+                                    <p className=" text-dark_3 text-base md:text-lg lg:text-xl leading-[1.5em] font-mulish max-w-[790px]">
+                                        Your first-hand experiences help others
+                                        choose the right person to work with.
+                                        Thanks for contributing!
+                                    </p>
                                 </div>
+                                <div></div>
                             </div>
                         </div>
                     </div>
