@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${noto_serif.variable} ${mulish.variable}`}>
-            <body className=" font-noto_serif" suppressHydrationWarning={true}>
+            <body className="font-noto_serif" suppressHydrationWarning={true}>
                 <Navbar />
                 {children}
                 <Footer />
