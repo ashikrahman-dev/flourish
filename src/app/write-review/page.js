@@ -2,6 +2,7 @@ import React from "react";
 import reviewerProfileImg from "/public/img/luis-de-florio-profile-img.png";
 import Image from "next/image";
 import Link from "next/link";
+import WriteReviewComponent from "../components/WriteReviewComponent";
 
 export default function WriteReview() {
     return (
@@ -37,19 +38,7 @@ export default function WriteReview() {
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">
-                            <div className="bg-white rounded-xl p-[30px] flex flex-col gap-[30px]">
-                                <div>
-                                    <h2 className="text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] leading-[1.25em] font-bold text-dark_1 mb-5">
-                                        Write a review
-                                    </h2>
-                                    <p className=" text-dark_3 text-base md:text-lg lg:text-xl leading-[1.5em] font-mulish max-w-[790px]">
-                                        Your first-hand experiences help others
-                                        choose the right person to work with.
-                                        Thanks for contributing!
-                                    </p>
-                                </div>
-                                <div></div>
-                            </div>
+                            <WriteReviewComponent />
                         </div>
                     </div>
                     <div className=""></div>
