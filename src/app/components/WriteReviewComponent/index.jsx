@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import RecommendSelectOption from "../RecommendSelectOption";
 
 //for Name field validation
 const validateText = (text) => {
@@ -89,22 +90,7 @@ export default function WriteReviewComponent() {
                             Would you recommend Luis De Florio to others?
                         </h5>
 
-                        <input
-                            autoComplete="off"
-                            required
-                            minLength={2}
-                            maxLength={150}
-                            type="text"
-                            value={text}
-                            onChange={handleTextChange}
-                            name="firstName"
-                            placeholder="Choice an option"
-                            className={`py-5 px-6 rounded-xl h-[60px] w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 ${
-                                isTextValid
-                                    ? "border-dark_6"
-                                    : "border-status_danger"
-                            }`}
-                        />
+                        <RecommendSelectOption />
                     </div>
                     <div>
                         <h4 className="text-dark_1 text-xl md:text-[22px] lg:text-[26px] leading-[1.5em] font-bold mb-5">
@@ -127,8 +113,8 @@ export default function WriteReviewComponent() {
                     </div>
                     <div>
                         <h5 className="text-dark_1 text-base md:text-lg lg:text-xl leading-[1.5em] font-semibold mb-5">
-                            Who would most benefit from Luis De Florio's
-                            guidance?
+                            {`Who would most benefit from Luis De Florio's
+                            guidance?`}
                         </h5>
 
                         <textarea
