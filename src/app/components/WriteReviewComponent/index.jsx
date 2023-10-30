@@ -78,7 +78,7 @@ export default function WriteReviewComponent() {
                             onChange={handleTextChange}
                             name="firstName"
                             placeholder="Type here.."
-                            className={`py-5 px-6 rounded-xl h-[60px] w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 ${
+                            className={`py-5 px-6 rounded-xl h-[60px] w-full font-mulish text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 ${
                                 isTextValid
                                     ? "border-dark_6"
                                     : "border-status_danger"
@@ -104,7 +104,7 @@ export default function WriteReviewComponent() {
                             maxLength={500}
                             value={textarea}
                             onChange={handleTextareaChange}
-                            className={`py-5 px-6 rounded-xl h-[120px] w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 resize-none ${
+                            className={`py-5 px-6 rounded-xl h-[120px] font-mulish w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 resize-none ${
                                 isTextareaValid
                                     ? "border-dark_6"
                                     : "border-status_danger"
@@ -124,7 +124,7 @@ export default function WriteReviewComponent() {
                             maxLength={500}
                             value={textarea}
                             onChange={handleTextareaChange}
-                            className={`py-5 px-6 rounded-xl h-[120px] w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 resize-none ${
+                            className={`py-5 px-6 rounded-xl h-[120px] font-mulish w-full text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4 resize-none ${
                                 isTextareaValid
                                     ? "border-dark_6"
                                     : "border-status_danger"
@@ -137,7 +137,7 @@ export default function WriteReviewComponent() {
                             type="submit"
                             // disabled={loading}
                             disabled={!isTextValid}
-                            className="text-base md:text-lg lg:text-xl leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11  hover:bg-dark_2 transition-colors duration-200 justify-center font-noto_serif disabled:bg-dark_5 disabled:text-dark_4"
+                            className="text-base md:text-lg lg:text-x leading-[1.2em] font-semibold tracking-[0.03em] text-white bg-primary rounded-[50px] py-[10px] sm:py-3 md:py-3 lg:py-[18px] px-6 md:px-8 lg:px-11  hover:bg-dark_2 transition-colors duration-200 justify-center font-noto_serif disabled:bg-dark_5 disabled:text-dark_4"
                         >
                             Submit
                         </button>
