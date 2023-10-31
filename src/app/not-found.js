@@ -8,7 +8,7 @@ export default function NotFound() {
             <div className="login-signup-min-screen py-[60px] px-5 bg-dark_6">
                 <div className="container">
                     <div className="flex gap-10 md:gap-10 lg:gap-4 xl:gap-20 items-center justify-center">
-                        <div className="w-2/3 flex justify-center flex-col align-middle items-center">
+                        <div className="w-full md:w-2/3 flex justify-center flex-col align-middle items-center">
                             <Image
                                 src={notFoundImage}
                                 alt="404 Not found"

@@ -6,7 +6,7 @@ import GuideSignUpComponent from "../components/GuideSignUpComponent";
 export default function GuideSignUp() {
     return (
         <>
-            <div className="py-[60px] lg:py-20 px-5 bg-dark_7">
+            <div className="login-signup-min-screen py-[60px] lg:py-20 px-5 bg-dark_7">
                 <div className="container">
                     <div className="flex flex-col-reverse lg:flex-row gap-10 md:gap-10 lg:gap-4 xl:gap-20 items-center">
                         <div className="w-full lg:pe-10">
