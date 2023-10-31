@@ -60,8 +60,8 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="topbar-menu text-dark_5 flex gap-10 text-sm lg:text-base">
-                                <Link href="/">About</Link>
-                                <Link href="/">Contact us</Link>
+                                <Link href="/about">About</Link>
+                                <Link href="/contact">Contact us</Link>
                             </div>
                         </div>
                     </div>
