@@ -44,7 +44,7 @@ export default function WriteReviewComponent() {
     return (
         <>
             <form>
-                <div className="bg-white rounded-xl p-[30px] flex flex-col gap-[30px]">
+                <div className="bg-white rounded-xl p-4 py-10 md:p-[30px] flex flex-col gap-[30px]">
                     <div>
                         <h2 className="text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] leading-[1.25em] font-bold text-dark_1 mb-5">
                             Write a review
@@ -130,6 +130,17 @@ export default function WriteReviewComponent() {
                                     : "border-status_danger"
                             }`}
                         />
+                        <label className="text-sm leading-[1.7em] text-dark_3 mt-[10px] flex gap-[10px] font-mulish">
+                            <input
+                                autoComplete="off"
+                                type="checkbox"
+                                name="checkbox"
+                                className="w-5 h-5 text-[#596B36] appearance-none border border-[#596B36] checked:bg-[#596B36] checked:border-0 rounded-md bg-white"
+                            />
+                            I confirm this review reflects my own genuine
+                            experiences with this guide. I have not been offered
+                            payment to leave this review.
+                        </label>
                     </div>
 
                     <div className="">

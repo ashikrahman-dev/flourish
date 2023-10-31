@@ -26,7 +26,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en" className={`${noto_serif.variable} ${mulish.variable}`}>
+        <html
+            lang="en"
+            className={`${noto_serif.variable} ${mulish.variable} scroll-smooth`}
+        >
             <body className="font-noto_serif" suppressHydrationWarning={true}>
                 <Navbar />
                 {children}

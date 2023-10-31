@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+
 //for Name field validation
 const validateText = (text) => {
     const regex = /^[a-zA-Z]+$/;

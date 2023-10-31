@@ -80,9 +80,9 @@ export default function Accordion() {
                                 <path
                                     d="M23.75 11.25L15 20L6.25 11.25"
                                     stroke="#DDB5AB"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 />
                             </svg>
                         </div>

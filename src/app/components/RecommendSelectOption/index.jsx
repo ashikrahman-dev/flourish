@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 // import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import "./style.css";
 
 const people = [
     { name: "Choice an option" },
@@ -24,10 +25,10 @@ export default function RecommendSelectOption() {
                     
                     py-5 px-6 rounded-xl h-[60px] text-base font-medium leading-5 border-2 border-dark_6 text-dark_2 outline-none focus:border-dark_4 transition-all duration-150 placeholder:text-dark_4"
                     >
-                        <span className="block truncate font-mulish text-base font-medium text-dark_3 leading-[1.25em] px-4">
+                        <span className="block truncate font-mulish text-base font-medium text-dark_3 leading-[1.3em] px-4 -mt-[2px]">
                             {selected.name}
                         </span>
-                        <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+                        <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-5">
                             <svg
                                 width="20"
                                 height="20"
@@ -40,7 +41,7 @@ export default function RecommendSelectOption() {
                                     stroke="#53413B"
                                     strokeWidth="2"
                                     strokeLinecap="round"
-                                    stroke-linejoin="round"
+                                    strokeLinejoin="round"
                                 />
                             </svg>
                         </span>
@@ -51,15 +52,15 @@ export default function RecommendSelectOption() {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm font-mulish text-base">
+                        <Listbox.Options className="custom-scrollbar absolute max-h-40 w-full overflow-auto rounded-md bg-white py-1 text-base focus:outline-none sm:text-sm font-mulish shadow-[0_12px_24px_0_rgba(0,0,0,0.07)]">
                             {people.map((person, personIdx) => (
                                 <Listbox.Option
                                     key={personIdx}
                                     className={({ active }) =>
-                                        `relative cursor-default select-none py-2 pl-10 pr-4 font-mulish text-base ${
+                                        `relative cursor-default select-none py-4 pl-10 pr-4 font-mulish text-base leading-[1.87em] text-[yellow] ${
                                             active
-                                                ? "bg-amber-100 text-amber-900"
-                                                : "text-gray-900"
+                                                ? " text-[red] font-semibold"
+                                                : " text-[green] font-normal"
                                         }`
                                     }
                                     value={person}
@@ -67,38 +68,27 @@ export default function RecommendSelectOption() {
                                     {({ selected }) => (
                                         <>
                                             <span
-                                                className={`block truncate ${
+                                                className={`block truncate text-dark_3 font-mulish leading-[1.25em] text-base ${
                                                     selected
-                                                        ? "font-medium"
-                                                        : "font-normal"
+                                                        ? "font-semibold text-primary"
+                                                        : "font-normal text-dark_1"
                                                 }`}
                                             >
                                                 {person.name}
                                             </span>
                                             {selected ? (
-                                                <span className="absolute inset-y-0 left-0 flex items-center pl-3 font-mulish text-base text-amber-600">
+                                                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                                                     <svg
-                                                        width="18"
-                                                        height="18"
-                                                        viewBox="0 0 18 18"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
                                                         fill="none"
                                                         xmlns="http://www.w3.org/2000/svg"
                                                     >
-                                                        <g clip-path="url(#clip0_757_7056)">
-                                                            <path
-                                                                d="M5.8275 15.4416C5.52989 15.4423 5.2351 15.3841 4.96004 15.2704C4.68499 15.1568 4.43511 14.9899 4.22475 14.7794L0 10.5546L1.068 9.48589L5.29275 13.7106C5.43451 13.8523 5.62672 13.9319 5.82712 13.9319C6.02753 13.9319 6.21974 13.8523 6.3615 13.7106L16.932 3.14014L18 4.20889L7.4295 14.7794C7.21928 14.9899 6.96953 15.1568 6.6946 15.2704C6.41967 15.3841 6.12499 15.4423 5.8275 15.4416V15.4416Z"
-                                                                fill="#884A39"
-                                                            />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_757_7056">
-                                                                <rect
-                                                                    width="18"
-                                                                    height="18"
-                                                                    fill="white"
-                                                                />
-                                                            </clipPath>
-                                                        </defs>
+                                                        <path
+                                                            d="M4.55013 11.9756C4.32037 11.976 4.09279 11.931 3.88046 11.8432C3.66813 11.7554 3.47525 11.6265 3.31288 11.464L0.050293 8.20198L0.875126 7.37656L4.13771 10.6391C4.2471 10.7485 4.39545 10.8099 4.55013 10.8099C4.70481 10.8099 4.85315 10.7485 4.96254 10.6391L13.1251 2.47656L13.95 3.3014L5.78738 11.464C5.62501 11.6265 5.43212 11.7554 5.21979 11.8432C5.00747 11.931 4.77989 11.976 4.55013 11.9756Z"
+                                                            fill="#884A39"
+                                                        />
                                                     </svg>
                                                 </span>
                                             ) : null}

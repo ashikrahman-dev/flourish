@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.form-control {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: #A99E9B;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #A99E9B;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    transform: scale(0);
+    transition: 70ms transform ease-in-out;
+    background: url('data:image/svg+xml,<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.7 22H14.3C19.8 22 22 19.8 22 14.3V7.7C22 2.2 19.8 0 14.3 0H7.7C2.2 0 0 2.2 0 7.7V14.3C0 19.8 2.2 22 7.7 22Z" fill="%23596B36"/><path d="M6.32501 11L9.43801 14.113L15.675 7.88696" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>');
+    border-radius: 6px;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
