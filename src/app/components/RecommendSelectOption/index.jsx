@@ -52,7 +52,7 @@ export default function RecommendSelectOption() {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Listbox.Options className="custom-scrollbar absolute max-h-30 md:max-h-40 w-full overflow-auto rounded-md bg-white py-1 text-base focus:outline-none sm:text-sm font-mulish shadow-[0_12px_24px_0_rgba(0,0,0,0.07)]">
+                        <Listbox.Options className="custom-scrollbar absolute max-h-[120px] md:max-h-40 w-full overflow-auto rounded-md bg-white py-1 text-base focus:outline-none sm:text-sm font-mulish shadow-[0_12px_24px_0_rgba(0,0,0,0.07)]">
                             {people.map((person, personIdx) => (
                                 <Listbox.Option
                                     key={personIdx}
