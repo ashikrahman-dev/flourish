@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -9,6 +10,7 @@ import "./style.css";
 
 export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const pathname = usePathname();
 
     return (
         <>
@@ -60,8 +62,26 @@ export default function Navbar() {
                         </div>
                         <div className="hidden md:block">
                             <div className="topbar-menu text-dark_5 flex gap-10 text-sm lg:text-base">
-                                <Link href="/about">About</Link>
-                                <Link href="/contact">Contact us</Link>
+                                <Link
+                                    className={`link ${
+                                        pathname === "/about"
+                                            ? "active text-primary_shade_1"
+                                            : ""
+                                    }`}
+                                    href="/about"
+                                >
+                                    About
+                                </Link>
+                                <Link
+                                    className={`link ${
+                                        pathname === "/contact"
+                                            ? "active text-primary_shade_1"
+                                            : ""
+                                    }`}
+                                    href="/contact"
+                                >
+                                    Contact us
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -93,26 +113,42 @@ export default function Navbar() {
                         <div className="hidden md:block">
                             <div className="navigation-menu text-dark_3 text-base lg:text-lg font-semibold tracking-[.03em] flex gap-3 lg:gap-6 items-center">
                                 <Link
-                                    className=" hover:text-primary transition-all duration-100"
+                                    className={`link ${
+                                        pathname === "/guide-signup"
+                                            ? "active text-primary"
+                                            : "hover:text-dark_1 transition-all duration-100"
+                                    }`}
                                     href="/guide-signup"
                                 >
                                     Sign up as a guide
                                 </Link>
                                 <Link
-                                    className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150"
+                                    className={`link ${
+                                        pathname === "/write-review"
+                                            ? "active bg-primary text-white border-2 border-primary py-2 px-6 rounded-[50px] "
+                                            : "text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150"
+                                    }`}
                                     href="/write-review"
                                 >
                                     Write a review
                                 </Link>
                                 <Link
+                                    className={`link ${
+                                        pathname === "/signup"
+                                            ? "active text-primary"
+                                            : "hover:text-dark_1 transition-all duration-100"
+                                    }`}
                                     href="/signup"
-                                    className=" hover:text-primary transition-all duration-100"
                                 >
                                     Sign up
                                 </Link>
                                 <Link
+                                    className={`link ${
+                                        pathname === "/login"
+                                            ? "active text-primary"
+                                            : "hover:text-dark_1 transition-all duration-100"
+                                    }`}
                                     href="/login"
-                                    className=" hover:text-primary transition-all duration-100"
                                 >
                                     Login
                                 </Link>
