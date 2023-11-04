@@ -68,7 +68,7 @@ export default function Navbar() {
                                             ? "active text-primary_shade_1"
                                             : ""
                                     }`}
-                                    href="/about"
+                                    href="/add-offerings"
                                 >
                                     About
                                 </Link>
