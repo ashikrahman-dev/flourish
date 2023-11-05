@@ -75,7 +75,7 @@ export default function AddOfferings() {
                                             </h3>
                                             <Link
                                                 href="mailto:luis.florio@gmail.com"
-                                                className="text-base lg:text-lg text-dark_3 leading-[1.88em] font-mulish font-normal hover:underline hover:text-dark_1"
+                                                className="text-base lg:text-lg text-dark_3 leading-[1.88em] font-mulish font-normal hover:underline hover:text-dark_1 mt-1 underline-offset-2"
                                             >
                                                 luis.florio@gmail.com
                                             </Link>
@@ -83,12 +83,25 @@ export default function AddOfferings() {
                                     </div>
                                     {/* Upload image button */}
                                     <Link
-                                        className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150 inline-block"
+                                        className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150 inline-block font-semibold"
                                         href="/"
                                     >
                                         Upload profile picture
                                     </Link>
                                     {/* Upload image button */}
+                                </div>
+                                <div>
+                                    <h5 className=" text-xl leading-[1.5em] text-dark_1 font-semibold">
+                                        Add up to 5 offerings.
+                                    </h5>
+                                    <h6 className="text-base leading-[1.62em] text-dark_1 font-semibold mt-[5px]">
+                                        (Please add each offering separately)
+                                    </h6>
+                                    <p className=" text-base leading-[1.87em] text-dark_3 font-mulish italic mt-[5px]">
+                                        Examples: strength training, somatic
+                                        therapy, tango lessons, career
+                                        transition coaching, yoga retreats...
+                                    </p>
                                 </div>
                                 {/* Offer form wrapper */}
                             </div>

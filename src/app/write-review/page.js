@@ -30,7 +30,7 @@ export default function WriteReview() {
                                 </h4>
 
                                 <Link
-                                    className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150"
+                                    className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150 font-semibold"
                                     href="/"
                                 >
                                     Change
