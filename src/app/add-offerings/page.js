@@ -1,4 +1,8 @@
+import Image from "next/image";
 import React from "react";
+
+import AuthorProfileImage from "/public/img/offerpage-user-profile-img.png";
+import Link from "next/link";
 
 export default function AddOfferings() {
     return (
@@ -6,7 +10,7 @@ export default function AddOfferings() {
             <section className="py-[60px] lg:py-20 bg-dark_7">
                 <div className="container">
                     <div className="text-center">
-                        <h3 className=" text-[30px] leading-[1.33em] font-semibold text-dark_1 mb-[10px]">
+                        <h3 className="text-xl sm:text-[22px] md:text-[26px] lg:text-[30px] leading-[1.33em] font-semibold text-dark_1 mb-[10px]">
                             What do you offer?
                         </h3>
                         <p className=" font-mulish text-dark_3 text-lg leading-[1.88em]">
@@ -51,7 +55,42 @@ export default function AddOfferings() {
                         </div>
                         <div className="w-full md:w-2/3">
                             <div className="bg-white rounded-xl p-4 py-10 md:p-[30px] flex flex-col gap-[30px]">
-                                Luis De Florio
+                                {/* Offer form wrapper */}
+                                <div className="flex justify-between items-center">
+                                    <div className="flex items-center gap-[30px]">
+                                        <Image
+                                            src={AuthorProfileImage}
+                                            alt="Author Image"
+                                            placeholder="blur"
+                                            quality={100}
+                                            style={{
+                                                width: "100px",
+                                                maxWidth: "100px",
+                                                height: "auto",
+                                            }}
+                                        />
+                                        <div>
+                                            <h3 className="text-xl sm:text-[22px] md:text-[26px] lg:text-[30px] leading-[1.33em] font-semibold text-dark_1">
+                                                Luis De Florio
+                                            </h3>
+                                            <Link
+                                                href="mailto:luis.florio@gmail.com"
+                                                className="text-base lg:text-lg text-dark_3 leading-[1.88em] font-mulish font-normal hover:underline hover:text-dark_1"
+                                            >
+                                                luis.florio@gmail.com
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    {/* Upload image button */}
+                                    <Link
+                                        className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150 inline-block"
+                                        href="/"
+                                    >
+                                        Upload profile picture
+                                    </Link>
+                                    {/* Upload image button */}
+                                </div>
+                                {/* Offer form wrapper */}
                             </div>
                         </div>
                     </div>
