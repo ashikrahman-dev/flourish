@@ -3,6 +3,7 @@ import reviewerProfileImg from "/public/img/luis-de-florio-profile-img.png";
 import Image from "next/image";
 import Link from "next/link";
 import WriteReviewComponent from "../components/WriteReviewComponent";
+import Button from "../components/Button";
 
 export default function WriteReview() {
     return (
@@ -28,13 +29,10 @@ export default function WriteReview() {
                                 <h4 className="text-lg sm:text-xl xl:text-[26px] text-dark_1 font-bold leading-[1.38em] mt-2">
                                     Luis De Florio
                                 </h4>
-
-                                <Link
-                                    className="text-primary border-2 border-primary rounded-[50px] py-2 px-6 hover:bg-primary hover:text-white transition-all duration-150 font-semibold"
-                                    href="/"
-                                >
-                                    Change
-                                </Link>
+                                <Button
+                                    buttonName={"Change"}
+                                    buttonLink={"/login"}
+                                />
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">

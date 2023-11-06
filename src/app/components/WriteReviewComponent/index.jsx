@@ -3,6 +3,34 @@
 import React, { useState } from "react";
 import RecommendSelectOption from "../RecommendSelectOption";
 
+const LuisDeFlorioVariation = [
+    {
+        id: 1,
+        variationName: "Qi Gong",
+        inputName: "qi_gong",
+    },
+    {
+        id: 2,
+        variationName: "Tai Chi",
+        inputName: "tai_chi",
+    },
+    {
+        id: 3,
+        variationName: "Neidan (Internal Alchemy)",
+        inputName: "neidan",
+    },
+    {
+        id: 4,
+        variationName: "Meditation",
+        inputName: "meditation",
+    },
+    {
+        id: 5,
+        variationName: "Other (specify in review)",
+        inputName: "other",
+    },
+];
+
 //for Name field validation
 const validateText = (text) => {
     const regex = /^[a-zA-Z]+$/;
@@ -55,9 +83,23 @@ export default function WriteReviewComponent() {
                         </p>
                     </div>
                     <div>
-                        <h5 className="text-dark_1 text-base md:text-lg lg:text-xl leading-[1.5em] font-semibold">
+                        <h5 className="text-dark_1 text-base md:text-lg lg:text-xl leading-[1.5em] font-semibold mb-5">
                             What did you do with Luis De Florio?
                         </h5>
+                        <ul className="flex flex-col gap-3">
+                            {LuisDeFlorioVariation.map((data, index) => (
+                                <li key={index}>
+                                    <label className="text-base leading-[1.4em] text-dark_3 flex gap-[10px] font-mulish">
+                                        <input
+                                            type="checkbox"
+                                            name="checkbox"
+                                            className="w-5 h-5 text-[#596B36] appearance-none border border-[#596B36] checked:bg-[#596B36] checked:border-0 rounded-md bg-white"
+                                        />
+                                        {data.variationName}
+                                    </label>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     <div>
                         <h5 className="text-dark_1 text-base md:text-lg lg:text-xl leading-[1.5em] font-semibold mb-1">
