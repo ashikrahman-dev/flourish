@@ -1,9 +1,49 @@
-import Image from "next/image";
 import React from "react";
 
-import Link from "next/link";
-import AddOfferingsComponents from "../components/OfferingsForm/AddOfferingsComponent";
 import ProvideYourOfferings from "../components/OfferingsForm/ProvideYourOfferings";
+
+const offerStepButton = [
+    {
+        id: 1,
+        btnText: "Add offerings",
+    },
+    {
+        id: 2,
+        btnText: "Provide your offerings",
+    },
+    {
+        id: 3,
+        btnText: "Referral program",
+    },
+    {
+        id: 4,
+        btnText: "Tagline",
+    },
+    {
+        id: 5,
+        btnText: "Verified",
+    },
+    {
+        id: 6,
+        btnText: "Images",
+    },
+    {
+        id: 7,
+        btnText: "Keywords",
+    },
+    {
+        id: 8,
+        btnText: "Links",
+    },
+    {
+        id: 9,
+        btnText: "Booking system",
+    },
+    {
+        id: 10,
+        btnText: "Verify your identity",
+    },
+];
 
 export default function AddOfferings() {
     return (
@@ -22,36 +62,14 @@ export default function AddOfferings() {
                     <div className="flex flex-col md:flex-row gap-[30px] mt-12">
                         <div className="w-full md:w-1/3">
                             <div className="flex flex-col gap-4">
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Add offerings
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Provide your offerings
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Referral program
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Tagline
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Verified
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Images
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Keywords
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Links
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Booking system
-                                </button>
-                                <button className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150">
-                                    Verify your identity
-                                </button>
+                                {offerStepButton.map((data) => (
+                                    <button
+                                        key={data.id}
+                                        className="text-base text-dark_3 font-semibold leading-[1.62em] bg-white rounded-[9px] py-3 px-4 w-full text-start hover:bg-primary hover:text-white transition-all duration-150"
+                                    >
+                                        {data.btnText}
+                                    </button>
+                                ))}
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">
