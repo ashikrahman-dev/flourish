@@ -3,6 +3,7 @@ import React from "react";
 
 import Link from "next/link";
 import AddOfferingsComponents from "../components/OfferingsForm/AddOfferingsComponent";
+import ProvideYourOfferings from "../components/OfferingsForm/ProvideYourOfferings";
 
 export default function AddOfferings() {
     return (
@@ -54,9 +55,10 @@ export default function AddOfferings() {
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">
-                            <div className="bg-white rounded-xl p-4 py-10 md:p-[30px] flex flex-col gap-[30px]">
+                            <div className="bg-white rounded-xl p-4 py-10 md:p-[30px] flex flex-col gap-[30px] min-h-[830px]">
                                 {/* Offer form wrapper */}
-                                <AddOfferingsComponents />
+                                {/* <AddOfferingsComponents /> */}
+                                <ProvideYourOfferings />
                                 {/* Offer form wrapper */}
                             </div>
                         </div>

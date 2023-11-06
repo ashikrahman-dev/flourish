@@ -16,7 +16,7 @@ export default function RecommendSelectOption() {
     const [selected, setSelected] = useState(people[0]);
 
     return (
-        <div className="">
+        <>
             <Listbox value={selected} onChange={setSelected}>
                 <div className="relative mt-1 font-mulish text-base">
                     <Listbox.Button
@@ -100,6 +100,6 @@ export default function RecommendSelectOption() {
                     </Transition>
                 </div>
             </Listbox>
-        </div>
+        </>
     );
 }
