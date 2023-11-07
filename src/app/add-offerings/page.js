@@ -1,6 +1,7 @@
 import React from "react";
 
 import ProvideYourOfferings from "../components/OfferingsForm/ProvideYourOfferings";
+import ReferralProgram from "../components/OfferingsForm/ReferralProgram";
 
 const offerStepButton = [
     {
@@ -76,7 +77,8 @@ export default function AddOfferings() {
                             <div className="bg-white rounded-xl p-4 py-10 md:p-[30px] flex flex-col gap-[30px] min-h-[830px]">
                                 {/* Offer form wrapper */}
                                 {/* <AddOfferingsComponents /> */}
-                                <ProvideYourOfferings />
+                                {/* <ProvideYourOfferings /> */}
+                                <ReferralProgram />
                                 {/* Offer form wrapper */}
                             </div>
                         </div>
