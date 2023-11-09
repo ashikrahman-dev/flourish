@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ReferralProgram() {
     return (
-        <div>
+        <>
             <div className="flex flex-col justify-between h-full min-h-[770px] gap-[30px]">
                 <div className=" flex flex-col gap-[30px]">
                     <div className="">
@@ -20,7 +20,7 @@ export default function ReferralProgram() {
                         <h5 className="text-xl leading-[1.5em] text-dark_1 font-semibold mb-5">
                             Just send them this referral code
                         </h5>
-                        <div className="flex gap-[6px]">
+                        <div className="flex">
                             <input
                                 autoComplete="off"
                                 required
@@ -75,6 +75,7 @@ export default function ReferralProgram() {
                         </div>
                     </div>
                 </div>
+                {/* Double button */}
                 <div className="flex justify-between gap-5 mt-3">
                     <Link
                         className="text-primary border-2 border-primary rounded-[50px] py-4 px-11 hover:bg-primary hover:text-white transition-all duration-150 font-semibold inline-flex gap-[6px] align-middle items-center group"
@@ -124,7 +125,8 @@ export default function ReferralProgram() {
                         </span>
                     </Link>
                 </div>
+                {/* Double button */}
             </div>
-        </div>
+        </>
     );
 }

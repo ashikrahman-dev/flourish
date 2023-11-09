@@ -2,6 +2,7 @@ import React from "react";
 
 import ProvideYourOfferings from "../components/OfferingsForm/ProvideYourOfferings";
 import ReferralProgram from "../components/OfferingsForm/ReferralProgram";
+import Tagline from "../components/OfferingsForm/Tagline";
 
 const offerStepButton = [
     {
@@ -78,7 +79,8 @@ export default function AddOfferings() {
                                 {/* Offer form wrapper */}
                                 {/* <AddOfferingsComponents /> */}
                                 {/* <ProvideYourOfferings /> */}
-                                <ReferralProgram />
+                                {/* <ReferralProgram /> */}
+                                <Tagline />
                                 {/* Offer form wrapper */}
                             </div>
                         </div>

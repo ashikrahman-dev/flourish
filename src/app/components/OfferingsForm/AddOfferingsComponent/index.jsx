@@ -143,6 +143,7 @@ export default function AddOfferingsComponents() {
                     </li>
                 </ul>
             </div>
+            {/* Double button */}
             <div className="flex justify-between gap-5 mt-3">
                 <Link
                     className="text-primary border-2 border-primary rounded-[50px] py-4 px-11 hover:bg-primary hover:text-white transition-all duration-150 font-semibold inline-flex gap-[6px] align-middle items-center group"
@@ -192,6 +193,7 @@ export default function AddOfferingsComponents() {
                     </span>
                 </Link>
             </div>
+            {/* Double button */}
         </>
     );
 }
