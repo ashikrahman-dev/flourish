@@ -3,6 +3,8 @@ import React from "react";
 import ProvideYourOfferings from "../components/OfferingsForm/ProvideYourOfferings";
 import ReferralProgram from "../components/OfferingsForm/ReferralProgram";
 import Tagline from "../components/OfferingsForm/Tagline";
+import Verified from "../components/OfferingsForm/Verified";
+import AddOfferingsComponents from "../components/OfferingsForm/AddOfferingsComponent";
 
 const offerStepButton = [
     {
@@ -80,7 +82,8 @@ export default function AddOfferings() {
                                 {/* <AddOfferingsComponents /> */}
                                 {/* <ProvideYourOfferings /> */}
                                 {/* <ReferralProgram /> */}
-                                <Tagline />
+                                {/* <Tagline /> */}
+                                <Verified />
                                 {/* Offer form wrapper */}
                             </div>
                         </div>
