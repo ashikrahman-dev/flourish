@@ -1,20 +1,26 @@
-import { NextResponse } from "next/server";
+// import { NextResponse } from "next/server";
 
-// This function can be marked `async` if using `await` inside
+// import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request) {
-    const isAuthenticated = true;
+// // This function can be marked `async` if using `await` inside
 
-    if (!isAuthenticated) {
-        const url = new URL("/login", request.url);
-        return NextResponse.redirect(url);
-    }
+// export function middleware(request) {
+//     const isAuthenticated = true;
 
-    return NextResponse.next();
+//     if (!isAuthenticated) {
+//         const url = new URL("/login", request.url);
+//         return NextResponse.redirect(url);
+//     }
+
+//     return NextResponse.next();
+// }
+
+// // See "Matching Paths" below to learn more
+
+// export const config = {
+//     matcher: ["/add-offerings"],
+// };
+
+export function middleware(request, response) {
+    console.log("This is Middleware");
 }
-
-// See "Matching Paths" below to learn more
-
-export const config = {
-    matcher: ["/add-offerings"],
-};
