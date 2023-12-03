@@ -3,14 +3,38 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "/public/img/logo.svg";
 
 import "./style.css";
 
+let useClickOutside = (handler) => {
+    let domNode = useRef();
+
+    useEffect(() => {
+        let maybeHandler = (event) => {
+            if (!domNode.current.contains(event.target)) {
+                handler();
+            }
+        };
+
+        document.addEventListener("mousedown", maybeHandler);
+
+        return () => {
+            document.removeEventListener("mousedown", maybeHandler);
+        };
+    });
+
+    return domNode;
+};
+
 export default function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false);
     const pathname = usePathname();
+
+    let domNode = useClickOutside(() => {
+        setIsNavOpen(false);
+    });
 
     return (
         <>
@@ -206,9 +230,9 @@ export default function Navbar() {
                         </div>
                     </div>
                     {/* Sidebar Navigation */}
-                    <div>
+                    <div ref={domNode}>
                         <nav
-                            className={`fixed min-w-[270px] w-full max-w-[270px] sm:max-w-[310px] bg-white min-h-screen h-full top-0 left-0 overflow-x-hidden z-10 transition-all duration-500 ${
+                            className={`fixed min-w-[270px] w-full max-w-[270px] sm:max-w-[310px] bg-white min-h-screen h-full top-0 left-0 overflow-x-hidden transition-all duration-500 z-[1000] ${
                                 isNavOpen ? "nav-open" : "nav-closed"
                             }`}
                         >
