@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 // import { NextResponse } from "next/server";
 
 // import { NextRequest, NextResponse } from "next/server";
@@ -21,6 +22,20 @@
 //     matcher: ["/add-offerings"],
 // };
 
-export function middleware(request, response) {
-    console.log("This is Middleware");
+"use client";
+
+import { NextResponse } from "next/server";
+
+export function middleware(request) {
+    
+    let cookie = request.cookies.get("nextjs");
+    console.log(cookie);
+    const allCookies = request.cookies.getAll();
+    console.log(allCookies);
+
+    return NextResponse.redirect(new URL("/login", request.url));
 }
+
+export const config = {
+    matcher: ["/contact"],
+};
