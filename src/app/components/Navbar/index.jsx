@@ -88,7 +88,7 @@ export default function Navbar() {
                             <div className="topbar-menu text-dark_5 flex gap-10 text-sm lg:text-base">
                                 <Link
                                     className={`link ${
-                                        pathname === "/about"
+                                        pathname === "/add-offerings"
                                             ? "active text-primary_shade_1"
                                             : ""
                                     }`}
