@@ -36,5 +36,5 @@ export function middleware(request) {
 }
 
 export const config = {
-    matcher: ["/contact-us"],
+    matcher: ["/contact"],
 };
