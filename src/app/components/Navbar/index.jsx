@@ -89,7 +89,7 @@ export default function Navbar() {
                                 <Link
                                     className={`link ${
                                         pathname === "/add-offerings"
-                                            ? "active text-primary_shade_1"
+                                            ? "active text-dark_6"
                                             : ""
                                     }`}
                                     href="/add-offerings"
@@ -99,7 +99,7 @@ export default function Navbar() {
                                 <Link
                                     className={`link ${
                                         pathname === "/about"
-                                            ? "active text-primary_shade_1"
+                                            ? "active text-dark_6"
                                             : ""
                                     }`}
                                     href="/about"
@@ -109,12 +109,12 @@ export default function Navbar() {
                                 <Link
                                     className={`link ${
                                         pathname === "/contact"
-                                            ? "active text-primary_shade_1"
+                                            ? "active text-dark_6"
                                             : ""
                                     }`}
                                     href="/contact"
                                 >
-                                    Contact us
+                                    Contact
                                 </Link>
                             </div>
                         </div>
