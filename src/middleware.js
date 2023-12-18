@@ -27,7 +27,6 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
-    
     let cookie = request.cookies.get("nextjs");
     console.log(cookie);
     const allCookies = request.cookies.getAll();
@@ -37,5 +36,5 @@ export function middleware(request) {
 }
 
 export const config = {
-    matcher: ["/contact"],
+    matcher: ["/contact-us"],
 };

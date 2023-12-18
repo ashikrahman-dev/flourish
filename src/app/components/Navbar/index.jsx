@@ -94,6 +94,16 @@ export default function Navbar() {
                                     }`}
                                     href="/add-offerings"
                                 >
+                                    Add Offerings
+                                </Link>
+                                <Link
+                                    className={`link ${
+                                        pathname === "/about"
+                                            ? "active text-primary_shade_1"
+                                            : ""
+                                    }`}
+                                    href="/about"
+                                >
                                     About
                                 </Link>
                                 <Link
