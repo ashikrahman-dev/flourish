@@ -1,7 +1,7 @@
+import { Mulish, Noto_Serif } from "next/font/google";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import { Mulish, Noto_Serif } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
 

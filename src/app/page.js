@@ -1,10 +1,10 @@
 import Image from "next/image";
-import ProfileViewImage from "/public/img/how-it-work-section-img.png";
-import ConnectPeople from "/public/img/connect-new-people-img.png";
-import CallToActionBg from "/public/img/cta-section-bg.jpg";
-import Feedback from "./components/Feedback";
 import Link from "next/link";
 import Accordion from "./components/Accordion";
+import Feedback from "./components/Feedback";
+import ConnectPeople from "/public/img/connect-new-people-img.png";
+import CallToActionBg from "/public/img/cta-section-bg.jpg";
+import ProfileViewImage from "/public/img/how-it-work-section-img.png";
 
 import { BannerSlider } from "./components/BannerSlider";
 import CounterUp from "./components/CounterUp";
